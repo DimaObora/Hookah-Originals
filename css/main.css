@@ -1909,6 +1909,7 @@ nav {
     padding: 20px 0;
     z-index: 5;
     background: #fff;
+    width: 11em;
   }
   nav a {
     color: #691cff !important;
@@ -2043,7 +2044,8 @@ nav a:hover {
   letter-spacing: 3px;
   font-weight: 700;
   line-height: 1.15em;
-  text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5);
+  font-family: 'DynarShadow Bold', arial;
+  /*text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5);*/
 }
 
 @media (max-width: 991px) {
@@ -2357,6 +2359,19 @@ nav a:hover {
 @media (max-width: 991px) {
   .about-details {
     text-align: center;
+    margin-left: 0em;
+    padding-bottom: 2.5em;
+
+  }
+  .member-area {
+    background-position: -48px 0px;
+    background-size: 236%;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
   }
 }
 
@@ -2536,9 +2551,18 @@ nav a:hover {
   .footer-social {
     text-align: left;
   }
+}@media (max-width: 360px) {
+  .about-area {
+    padding: 0px 0;
+  }
 }
 .quote-left span{
   color: black;
   font-weight: 600;
 }
+.logo:before{
+  content: url(../img/hookah.png);
+  display: inline-block;
+  vertical-align: middle;
+  }
 
