@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47358881-ad36-4040-af44-dbd24e9de5a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/hedar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/hedar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/hookah.png" afterPath="$PROJECT_DIR$/img/hookah.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/FAER.sass" afterPath="$PROJECT_DIR$/css/FAER.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -315,12 +307,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517667962994</updated>
       <workItem from="1517667964328" duration="22642000" />
-      <workItem from="1517756141273" duration="8568000" />
+      <workItem from="1517756141273" duration="9450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31210000" />
+    <option name="totallyTimeSpent" value="32092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1040" extended-state="6" />
