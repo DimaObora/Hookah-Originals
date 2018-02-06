@@ -1,10 +1,14 @@
+<?php>
+
+
+</?>
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?php echo  get_template_directory_uri();?>/img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="Colorlib">
 		<!-- Meta Description -->
@@ -21,15 +25,15 @@
 			CSS
 			============================================= -->
 		<link href="http://allfont.ru/allfont.css?fonts=dynarshadow-bold" rel="stylesheet" type="text/css" />
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/main.css">
-			<link rel="stylesheet" href="css/modal-callback.css">
-			<link rel="stylesheet" href="css/FAER.sass">
-			<link rel="stylesheet" href="css/hedar.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/linearicons.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/owl.carousel.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/font-awesome.min.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/magnific-popup.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/bootstrap.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/main.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/modal-callback.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/FAER.sass">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/hedar.css">
 		</head>
 		<body>
 		<div id="form-contact">
@@ -137,13 +141,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 no-padding single-img">
-							  <img src="img/f11.jpg" class="image img-fluid">
+							  <img src="<?php echo  get_template_directory_uri();?>/img/f11.jpg" class="image img-fluid">
 							  <div class="middle">
 								  <h2 class="text-uppercase text-white">Большое разнообразие приятных вкусов и миксов</h2>
 							  </div>
 						</div>
 						<div class="col-lg-4 col-md-4 no-padding single-img">
-							  <img src="img/f22.jpg" class="image img-fluid">
+							  <img src="<?php echo  get_template_directory_uri();?>/img/f22.jpg" class="image img-fluid">
 							  <div class="middle">
 								  <h2 class="text-uppercase text-white">Не знаешь что заказать?</h2>
 								  <p>Мы поможем! Позвони по номеру:</p>
@@ -151,26 +155,26 @@
 							  </div>
 						</div>
 						<div class="col-lg-4 col-md-4 no-padding single-img">
-							  <img src="img/f33.jpg" class="image img-fluid">
+							  <img src="<?php echo  get_template_directory_uri();?>/img/f33.jpg" class="image img-fluid">
 							  <div class="middle">
 								  <h2 class="text-uppercase text-white">Бесплатная доставка готового кальяна</h2>
 							  </div>
 						</div>
 						<div class="col-lg-6 col-sm-12 no-padding single-img">
-							  <img src="img/f44.jpg" class="image img-fluid">
+							  <img src="<?php echo  get_template_directory_uri();?>/img/f44.jpg" class="image img-fluid">
 							  <div class="middle2">
 							  	<a href="https://www.youtube.com/watch?v=oBzsStUX1Fk" class="play-btn">
-							  		<img class="vdo-icon" src="img/video-btn.png" alt="">
+							  		<img class="vdo-icon" src="<?php echo  get_template_directory_uri();?>/img/video-btn.png" alt="">
 							  	</a>
 							    <h2 class="text-uppercase text-white">КАК ЗАБИТЬ КАЛЬЯН ВКУСНО</h2>
 							    <p>3 рецепта</p>
 							  </div>
 						</div>
 						<div class="col-lg-6 col-sm-12 no-padding single-img">
-							  <img src="img/f55.jpg" class="image img-fluid">
+							  <img src="<?php echo  get_template_directory_uri();?>/img/f55.jpg" class="image img-fluid">
 							  <div class="middle2">
 							  	<a href="https://www.youtube.com/watch?v=_0SniMwH6xI" class="play-btn">
-							  		<img class="vdo-icon" src="img/video-btn.png" alt="">
+							  		<img class="vdo-icon" src="<?php echo  get_template_directory_uri();?>/img/video-btn.png" alt="">
 							  	</a>
 							    <h2 class="text-uppercase text-white">Как сделать реально ВКУСНЫЙ кальян!</h2>
 							    <p>за 15 мин</p>
@@ -183,7 +187,7 @@
 			<!-- End feature Area -->
 
 			<!-- Start service Area -->
-			<section class="service-area pt-100 pb-100" data-parallax="scroll" data-image-src="img/service-bg.jpg">
+			<section class="service-area pt-100 pb-100" data-parallax="scroll" data-image-src="<?php echo  get_template_directory_uri();?>/img/service-bg.jpg">
 				<div class="container">
 
 						<div class="uCalc_89179"></div>
@@ -201,7 +205,7 @@
 						<div class="active-member-carousel">
 							<div class="single-member item">
 									<div class="member-info d-flex flex-row justify-content-center">
-										<img class="" style="width:100px;height: 100%;border-radius: 50%;" src="img/m1.jpg" alt="">
+										<img class="" style="width:100px;height: 100%;border-radius: 50%;" src="<?php echo  get_template_directory_uri();?>/img/m1.jpg" alt="">
 										<div class="details">
 											<h4 class="text-white text-uppercase">Саша Простакова</h4>
 											<p>Возрост: 26 лет<br>
@@ -213,7 +217,7 @@
 							</div>
 							<div class="single-member item">
 									<div class="member-info d-flex flex-row justify-content-center">
-										<img class="" style="width:100px;height: 100%; border-radius: 50%;" src="img/e1.jpg" alt="">
+										<img class="" style="width:100px;height: 100%; border-radius: 50%;" src="<?php echo  get_template_directory_uri();?>/img/e1.jpg" alt="">
 										<div class="details">
 											<h4 class="text-white text-uppercase">Лиза</h4>
 											<p>Возрост: 22 лет<br>
@@ -237,7 +241,7 @@
 				<div class="container-fluid">
 					<div class="row  d-flex justify-content-start align-items-center">
 						<div class="col-lg-6 col-md-12 no-padding">
-							<img class="img-fluid" src="img/model-legs-water-pipe-relax.jpg" alt="">
+							<img class="img-fluid" src="<?php echo  get_template_directory_uri();?>/img/model-legs-water-pipe-relax.jpg" alt="">
 						</div>
 
 						<div class="about-details col-lg-5 col-md-12">
@@ -305,15 +309,15 @@
 			<!-- End Footer Area -->
 
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/jquery.sticky.js"></script>
-			<script src="js/parallax.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="js/main.js"></script>
-			<script type="text/javascript" src="js/form-callback.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/vendor/bootstrap.min.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/owl.carousel.min.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/jquery.sticky.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/parallax.min.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/jquery.magnific-popup.min.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/main.js"></script>
+			<script type="text/javascript" src="<?php echo  get_template_directory_uri();?>/js/form-callback.js"></script>
 
 		</body>
 	</html>
