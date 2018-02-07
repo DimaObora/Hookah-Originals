@@ -2352,9 +2352,9 @@ nav a:hover {
 .about-details h2 {
   color: white;
 }
-.about-details{
-  margin-left: 2.5em;
-}
+/*.about-details{*/
+  /*margin-left: 2.5em;*/
+/*}*/
 
 @media (max-width: 991px) {
   .about-details {

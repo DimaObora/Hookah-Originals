@@ -147,7 +147,7 @@
 <!-- Start feature Area -->
 <section class="feature-area pb-100">
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-lg-4 col-md-4 no-padding single-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f11.jpg" class="image img-fluid">
                 <div class="middle">
@@ -191,7 +191,9 @@
                     <p>за 15 мин</p>
                 </div>
             </div>
-
+            <div class="col-lg-12">
+                <button id="sends" class="pull-right primary-btn d-inline-flex align-items-center mt-20">Отправить</button>
+            </div>
         </div>
     </div>
 </section>
@@ -210,7 +212,7 @@
                 <div class="container">
 
 
-                    <div class="co-lg-6 col-md-4 col-sm-6 col-xs-12 select">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
 
                         <b>Ваше имя:</b><br>
                         <input type="text" size="20"><br/>
@@ -223,7 +225,7 @@
 
                         <b>Кол-во кальянов:</b> <input type="text" id="count" value="1" onchange="calc()"/><br/>
                     </div>
-                    <div class="co-lg-6 col-md-4 col-sm-6 col-xs-12 select">
+                    <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
                         <!--                        <b>Выберите вкус кальяна:</b><br/>-->
                         <!--                        <select onchange="calc()" id="taste">-->
                         <!--                            <option value="0">Выбрать</option>-->
@@ -245,7 +247,7 @@
                         <!--                        </select><br/>-->
                         <b>Что налить в колбу:</b><br/>
 
-                            <select class="formcolback-select" id="flask" onchange="calc()" multiple="multiple">
+                            <select class="formcolback-select " id="flask" onchange="calc()" multiple="multiple">
                             <option value="0">Выбрать</option>
                             <?php
                             $args = array('posts_per_page' => -1, 'post_type' => 'flask');
@@ -278,10 +280,12 @@
                             wp_reset_postdata();
                             ?>
                         </select><br/>
-                        <br/>
+
                         <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
                         <br/>
-
+                        <div class="col-lg-12">
+                            <button id="sends" class="pull-right primary-btn d-inline-flex align-items-center mt-20">Отправить</button>
+                        </div>
                     </div>
                 </div>
 
@@ -385,7 +389,7 @@
 <script>
     $(document).ready(function() {
         $(".formcolback-select").select2();
-        alert(123);
+
     });
 </script>
 </body>
