@@ -1,7 +1,3 @@
-<?php>
-
-
-</?>
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -26,6 +22,7 @@
 			============================================= -->
 		<link href="http://allfont.ru/allfont.css?fonts=dynarshadow-bold" rel="stylesheet" type="text/css" />
 			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/linearicons.css">
+			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/form.css">
 			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/owl.carousel.css">
 			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?php echo  get_template_directory_uri();?>/css/magnific-popup.css">
@@ -189,10 +186,78 @@
 			<!-- Start service Area -->
 			<section class="service-area pt-100 pb-100" data-parallax="scroll" data-image-src="<?php echo  get_template_directory_uri();?>/img/service-bg.jpg">
 				<div class="container">
+<!--						<div class="uCalc_89179"></div>-->
+<!--						<script> var widgetOptions89179 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=89179&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>-->
 
-						<div class="uCalc_89179"></div>
-						<script> var widgetOptions89179 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=89179&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
+                    <div class="select-2">
 
+                        <p><b>Ваше имя:</b><br>
+                            <input type="text" size="20">
+                        </p>
+                        <p><b>Ваш телефон:</b><br>
+                            <input id="phone1" type="text" class="form-control">
+                        </p>
+                        <p><b>Когда и куда доставить:</b><br>
+                            <input type="text" size="20">
+                        </p>
+                    </div>
+                    <div class="select">
+                        <b>Выберите вкус кальяна:</b><br/>
+                        <select onchange="calc()" id="taste">
+                            <option value="0">Выбрать</option>
+                            <?php
+                            $args = array('posts_per_page' => -1, 'post_type' => 'taste');
+                            $myposts = get_posts($args);
+                            foreach ($myposts as $post) {
+                                setup_postdata($post);
+                                ?>
+                                <option value="<?php echo get_post_meta($post->ID,"price",true); ?>">
+                                    <?php the_title(); ?>
+                                </option>
+                                <?php
+                            }
+                            wp_reset_postdata();
+                            ?>
+                            <option value="0">Посоветуйте мне</option>
+                        </select><br/>
+                        <b>Что налить в колбу:</b><br/>
+                        <select onchange="calc()" id="flask">
+                            <option value="0">Выбрать</option>
+                            <?php
+                            $args = array('posts_per_page' => -1, 'post_type' => 'flask');
+                            $myposts = get_posts($args);
+                            foreach ($myposts as $post) {
+                                setup_postdata($post);
+                                ?>
+                                <option value="<?php echo get_post_meta($post->ID,"price",true); ?>">
+                                    <?php the_title(); ?>
+                                </option>
+                                <?php
+                            }
+                            wp_reset_postdata();
+                            ?>
+                        </select><br/>
+                        <b>Выберите тобак:</b><br/>
+                        <select onchange="calc()" id="tobacco">
+                            <option value="0">Выбрать</option>
+                            <?php
+                            $args = array('posts_per_page' => -1, 'post_type' => 'tobacco');
+                            $myposts = get_posts($args);
+                            foreach ($myposts as $post) {
+                                setup_postdata($post);
+                                ?>
+                                <option value="<?php echo get_post_meta($post->ID,"price",true); ?>">
+                                    <?php the_title(); ?>
+                                </option>
+                                <?php
+                            }
+                            wp_reset_postdata();
+                            ?>
+                        </select><br/>
+                        <br/>
+                        <b>Кол-во вариантов:</b> <input type="text" id="count" value="1" onchange="calc()"/>
+                        <div><b>Итого: </b><span id="result">0</span> руб.</div>
+                    </div>
 				</div>
 			</section>
 			<!-- End service Area -->
@@ -317,6 +382,7 @@
 			<script src="<?php echo  get_template_directory_uri();?>/js/parallax.min.js"></script>
 			<script src="<?php echo  get_template_directory_uri();?>/js/jquery.magnific-popup.min.js"></script>
 			<script src="<?php echo  get_template_directory_uri();?>/js/main.js"></script>
+			<script src="<?php echo  get_template_directory_uri();?>/js/calc-form.js"></script>
 			<script type="text/javascript" src="<?php echo  get_template_directory_uri();?>/js/form-callback.js"></script>
 
 		</body>
