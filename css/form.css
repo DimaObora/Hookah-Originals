@@ -1,33 +1,33 @@
-/*.select {*/
-    /*position:relative;*/
-    /*background-position: 95% 50%;*/
-    /*border-radius: 5px;*/
-    /*margin-right: 2%;*/
-    /*margin-bottom: 20px;*/
-    /*display: inline-block;*/
-/*}*/
+.select {
+    position:relative;
+    background-position: 95% 50%;
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
 
 
 
-/*select > option {*/
-    /*background-color: transparent;*/
-    /*border: 0;*/
+select > option {
+    background-color: transparent;
+    border: 0;
 
-    /*padding-right: 15px;*/
-    /*height: 31px;*/
-    /*width: 220px;*/
-/*}*/
+    padding-right: 15px;
+    height: 31px;
+    width: 220px;
+}
 
-/*.select b, .select-2 b {*/
-    /*font-weight: 700;*/
-    /*margin-bottom: 0;*/
-    /*text-transform: uppercase;*/
-    /*font-size: 14px;*/
-    /*letter-spacing: 2px;*/
-    /*color: #242424;*/
-    /*font-family: Roboto-Regular, sans-serif;*/
-    /*margin-bottom: 1em;*/
-/*}*/
+.select b, .select-2 b {
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #242424;
+    font-family: Roboto-Regular, sans-serif;
+    margin-bottom: 1em;
+}
 
 
 
