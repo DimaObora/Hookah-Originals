@@ -6,7 +6,7 @@
  */
 function calc() {
     //получаем ссылку на элемент Select (Выберите вкус кальяна)
-    var taste = document.getElementById("taste");
+    // var taste = document.getElementById("taste");
     //получаем ссылку на элемент Select (Что налить в колбу:)
     var flask = document.getElementById("flask");
     //получаем ссылку на элемент Select (Выберите тобак:)
@@ -17,7 +17,7 @@ function calc() {
     var result = document.getElementById("result");
 
     var price = 0;
-    price += parseInt(taste.options[taste.selectedIndex].value);
+    // price += parseInt(taste.options[taste.selectedIndex].value);
     price += parseInt(flask.options[flask.selectedIndex].value);
     price += parseInt(tobacco.options[tobacco.selectedIndex].value);
     price = parseInt(count.value) * price;
