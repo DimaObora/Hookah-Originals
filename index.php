@@ -159,17 +159,17 @@
                 <div class="container">
                     <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post">
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
-                            <b>Ваше имя:</b><br>
+                            <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
-                            <b>Ваш телефон:</b><br>
+                            <h4>Ваш телефон:</h4><br>
                             <input name="phone" id="phone1" type="text"><br/>
-                            <b>Когда и куда доставить:</b><br>
+                            <h4>Когда и куда доставить:</h4><br>
                             <input name="addres" type="text" size="20"><br/>
-                            <b>Кол-во кальянов:</b> <input name="count" type="text" id="count" value="1"
+                            <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
-                            <b>Что налить в колбу:</b><br/>
+                            <h4>Что налить в колбу:</h4><br/>
                             <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
                                     multiple="multiple">
                                 <?php
@@ -186,7 +186,7 @@
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
-                            <b>Выберите табак:</b><br/>
+                            <h4>Выберите табак:</h4><br/>
                             <select name="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
                                     multiple="multiple">
                                 <?php
@@ -203,12 +203,12 @@
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
-                            <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
+                            <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                             <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
                             <div class="col-lg-12">
                                 <button type="submit" id="sends"
-                                        class="pull-right primary-btn d-inline-flex align-items-center mt-20" style="color: white">
+                                        class="pull-right primary-btn d-inline-flex align-items-center mt-10" style="color: white">
                                     Заказать
                                 </button>
                             </div>
