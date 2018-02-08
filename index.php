@@ -185,7 +185,7 @@
                             <b>Когда и куда доставить:</b><br>
                             <input name="addres" type="text" size="20"><br/>
 
-                            <b>Кол-во кальянов:</b> <input title="count" type="text" id="count" value="1"
+                            <b>Кол-во кальянов:</b> <input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
@@ -225,6 +225,7 @@
                             </select><br/>
 
                             <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
+                            <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
                             <div class="col-lg-12">
                                 <button type="submit" id="sends"

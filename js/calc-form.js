@@ -11,6 +11,7 @@ function calc() {
     var count = document.getElementById("count");
     //получаем ссылку на элемент span, в него будем писать стоимость дизайна
     var result = document.getElementById("result");
+    var resultInput = document.getElementById("result-input");
     var price = 0;
     // console.log(flask.selectedOptions.length);
     for(var i =0; i< flask.selectedOptions.length; i++){
@@ -22,4 +23,5 @@ function calc() {
     price = parseInt(count.value) * 1200;
 
     result.innerHTML = price;
+    resultInput.value = price;
 }
