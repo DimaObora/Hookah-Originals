@@ -97,12 +97,6 @@
   -webkit-animation-name: fadeOut;
           animation-name: fadeOut; }
 
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 @keyframes fadeOut {
   0% {
     opacity: 1; }
@@ -146,7 +140,6 @@
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
-  transition: -webkit-transform 100ms ease;
   transition: transform 100ms ease; }
 
 .owl-carousel .owl-video-play-icon:hover {

@@ -28,49 +28,21 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/modal-callback.css">
+    <!--    <link rel="stylesheet" href="-->
+    <?php //echo get_template_directory_uri(); ?><!--/css/modal-callback.css">-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
     <!-- между открывающим и закрывающим тегом head -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
 
 
-
     <!-- далее инициализировать плагин на элементах <select>, чтобы стилизовать их -->
 
 </head>
 <body>
-<div id="form-contact">
-    <center>
-        <div class="contact-center">
-            <h2>Онлайн заявка</h2>
-            <form id="contact" name="contact" action="#" method="post">
-                <div>
-                    <input id="name" name="name" class="txt" placeholder="Ваше имя">
-                </div>
-                <div>
-                    <input id="phone" name="phone" class="txt phone-mask" placeholder="Ваш телефон">
-                </div>
-                <div>
-                    <input id="email" name="email" class="txt " placeholder="Ваш Email">
-                </div>
-                <div>
-                    <textarea id="msg" name="msg" class="txtarea" placeholder="Сфера деятельности:"></textarea>
-                </div>
-                <div>
-                    <button id="send">Отправить</button>
-                </div>
-                <div>
-                    <button type="button" id="hide-contact">Отмена</button>
-                </div>
-            </form>
-        </div>
-    </center>
-</div>
 <!-- Start Banner Area -->
 <section class="banner-area relative" id="home">
     <div class="container">
-
         <!-- Start Header Area -->
         <header class="default-header">
             <div class="container">
@@ -103,18 +75,14 @@
         </header>
         <!-- End Header Area -->
 
-
         <div class="row fullscreen align-items-center justify-content-center" style="height: 735px;">
             <div class="col-lg-12">
                 <div class="banner-content text-center">
-
                     <h1 class="center__text glitch is-glitching" data-text="Кальян на дом">Кальян на дом</h1>
                     <p class="text-uppercase mx-auto">
                         по дискому району
                     </p>
-
                     <!--<h1 class="text-uppercase text-white">Кальян на дом</h1>-->
-
                 </div>
             </div>
         </div>
@@ -191,9 +159,6 @@
                     <p>за 15 мин</p>
                 </div>
             </div>
-            <div class="col-lg-12">
-                <button id="sends" class="pull-right primary-btn d-inline-flex align-items-center mt-20">Отправить</button>
-            </div>
         </div>
     </div>
 </section>
@@ -207,88 +172,72 @@
                 <img class="img-fluid"
                      src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" alt="">
             </div>
-
             <div class="about-details col-lg-5 col-md-12">
                 <div class="container">
+                    <form>
+                        <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
 
+                            <b>Ваше имя:</b><br>
+                            <input title="name" type="text" size="20"><br/>
 
-                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
+                            <b>Ваш телефон:</b><br>
+                            <input title="tel" id="phone1" type="text"><br/>
 
-                        <b>Ваше имя:</b><br>
-                        <input type="text" size="20"><br/>
+                            <b>Когда и куда доставить:</b><br>
+                            <input title="addres" type="text" size="20"><br/>
 
-                        <b>Ваш телефон:</b><br>
-                        <input id="phone1" type="text"><br/>
-
-                        <b>Когда и куда доставить:</b><br>
-                        <input type="text" size="20"><br/>
-
-                        <b>Кол-во кальянов:</b> <input type="text" id="count" value="1" onchange="calc()"/><br/>
-                    </div>
-                    <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
-                        <!--                        <b>Выберите вкус кальяна:</b><br/>-->
-                        <!--                        <select onchange="calc()" id="taste">-->
-                        <!--                            <option value="0">Выбрать</option>-->
-                        <!--                            --><?php
-                        //                            $args = array('posts_per_page' => -1, 'post_type' => 'taste');
-                        //                            $myposts = get_posts($args);
-                        //                            foreach ($myposts as $post) {
-                        //                                setup_postdata($post);
-                        //                                ?>
-                        <!--                                <option value="-->
-                        <?php //echo get_post_meta($post->ID,"price",true); ?><!--">-->
-                        <!--                                    --><?php //the_title(); ?>
-                        <!--                                </option>-->
-                        <!--                                --><?php
-                        //                            }
-                        //                            wp_reset_postdata();
-                        //                            ?>
-                        <!--                            <option value="0">Посоветуйте мне</option>-->
-                        <!--                        </select><br/>-->
-                        <b>Что налить в колбу:</b><br/>
-
-                            <select class="formcolback-select " id="flask" onchange="calc()" multiple="multiple">
-                            <option value="0">Выбрать</option>
-                            <?php
-                            $args = array('posts_per_page' => -1, 'post_type' => 'flask');
-                            $myposts = get_posts($args);
-                            foreach ($myposts as $post) {
-                                setup_postdata($post);
-                                ?>
-                                <option value="<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                    <?php the_title(); ?>
-                                </option>
-                                <?php
-                            }
-                            wp_reset_postdata();
-                            ?>
-                        </select><br/>
-                        <b>Выберите тобак:</b><br/>
-                            <select class="formcolback-select" onchange="calc()" id="tobacco" multiple="multiple">
-                            <option value="0">Выбрать</option>
-                            <?php
-                            $args = array('posts_per_page' => -1, 'post_type' => 'tobacco');
-                            $myposts = get_posts($args);
-                            foreach ($myposts as $post) {
-                                setup_postdata($post);
-                                ?>
-                                <option value="<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                    <?php the_title(); ?>
-                                </option>
-                                <?php
-                            }
-                            wp_reset_postdata();
-                            ?>
-                        </select><br/>
-
-                        <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
-                        <br/>
-                        <div class="col-lg-12">
-                            <button id="sends" class="pull-right primary-btn d-inline-flex align-items-center mt-20">Отправить</button>
+                            <b>Кол-во кальянов:</b> <input title="count" type="text" id="count" value="1"
+                                                           onchange="calc()"/><br/>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
+                            <b>Что налить в колбу:</b><br/>
+                            <select title="flask" class="formcolback-select " id="flask" onchange="calc()"
+                                    multiple="multiple">
+                                <option value="0">Выбрать</option>
+                                <?php
+                                $args = array('posts_per_page' => -1, 'post_type' => 'flask');
+                                $myposts = get_posts($args);
+                                foreach ($myposts as $post) {
+                                    setup_postdata($post);
+                                    ?>
+                                    <option value="<?php echo get_post_meta($post->ID, "price", true); ?>">
+                                        <?php the_title(); ?>
+                                    </option>
+                                    <?php
+                                }
+                                wp_reset_postdata();
+                                ?>
+                            </select><br/>
+                            <b>Выберите тобак:</b><br/>
+                            <select title="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
+                                    multiple="multiple">
+                                <option value="0">Выбрать</option>
+                                <?php
+                                $args = array('posts_per_page' => -1, 'post_type' => 'tobacco');
+                                $myposts = get_posts($args);
+                                foreach ($myposts as $post) {
+                                    setup_postdata($post);
+                                    ?>
+                                    <option value="<?php echo get_post_meta($post->ID, "price", true); ?>">
+                                        <?php the_title(); ?>
+                                    </option>
+                                    <?php
+                                }
+                                wp_reset_postdata();
+                                ?>
+                            </select><br/>
 
+                            <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
+                            <br/>
+                            <div class="col-lg-12">
+                                <button id="sends"
+                                        class="pull-right primary-btn d-inline-flex align-items-center mt-20">
+                                    Отправить
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -330,7 +279,6 @@
                         кальянный и нашли вас! Приехали, купили такую же и продолжили курение. Спасибо большое за низкую
                         цену и хорошее качество, будем брать еще. </p>
                 </div>
-
             </div>
         </div>
         <div class="next-trigger"><span class="lnr lnr-arrow-right"></span></div>
@@ -338,15 +286,6 @@
     </div>
 </section>
 <!-- End member Area -->
-
-<!-- Start About Area -->
-
-<!-- End About Area -->
-
-<!-- Start contact Area -->
-
-<!-- End contact Area -->
-
 
 <!-- Strat Footer Area -->
 
@@ -370,12 +309,9 @@
 
 <!-- End Footer Area -->
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<!-- перед закрывающим тегом body -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         crossorigin="anonymous"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
@@ -384,12 +320,10 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/form-callback.js"></script>
-
+<!--<script type="text/javascript" src="--><?php //echo get_template_directory_uri(); ?><!--/js/form-callback.js"></script>-->
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $(".formcolback-select").select2();
-
     });
 </script>
 </body>
