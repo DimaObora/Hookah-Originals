@@ -174,33 +174,31 @@
             </div>
             <div class="about-details col-lg-5 col-md-12">
                 <div class="container">
-                    <form>
+                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post">
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
-
                             <b>Ваше имя:</b><br>
-                            <input title="name" type="text" size="20"><br/>
+                            <input name="name" type="text" size="20"><br/>
 
                             <b>Ваш телефон:</b><br>
-                            <input title="tel" id="phone1" type="text"><br/>
+                            <input name="phone" id="phone1" type="text"><br/>
 
                             <b>Когда и куда доставить:</b><br>
-                            <input title="addres" type="text" size="20"><br/>
+                            <input name="addres" type="text" size="20"><br/>
 
                             <b>Кол-во кальянов:</b> <input title="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
                             <b>Что налить в колбу:</b><br/>
-                            <select title="flask" class="formcolback-select " id="flask" onchange="calc()"
+                            <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
                                     multiple="multiple">
-                                <option value="0">Выбрать</option>
                                 <?php
                                 $args = array('posts_per_page' => -1, 'post_type' => 'flask');
                                 $myposts = get_posts($args);
                                 foreach ($myposts as $post) {
                                     setup_postdata($post);
                                     ?>
-                                    <option value="<?php echo get_post_meta($post->ID, "price", true); ?>">
+                                    <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
                                         <?php the_title(); ?>
                                     </option>
                                     <?php
@@ -209,16 +207,15 @@
                                 ?>
                             </select><br/>
                             <b>Выберите тобак:</b><br/>
-                            <select title="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
+                            <select name="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
                                     multiple="multiple">
-                                <option value="0">Выбрать</option>
                                 <?php
                                 $args = array('posts_per_page' => -1, 'post_type' => 'tobacco');
                                 $myposts = get_posts($args);
                                 foreach ($myposts as $post) {
                                     setup_postdata($post);
                                     ?>
-                                    <option value="<?php echo get_post_meta($post->ID, "price", true); ?>">
+                                    <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
                                         <?php the_title(); ?>
                                     </option>
                                     <?php
@@ -230,9 +227,9 @@
                             <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
                             <br/>
                             <div class="col-lg-12">
-                                <button id="sends"
-                                        class="pull-right primary-btn d-inline-flex align-items-center mt-20">
-                                    Отправить
+                                <button type="submit" id="sends"
+                                        class="pull-right primary-btn d-inline-flex align-items-center mt-20" style="color: white">
+                                    Заказать
                                 </button>
                             </div>
                         </div>
