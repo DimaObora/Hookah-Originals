@@ -44,7 +44,6 @@ if (@mail($sendto, $subject, $msg, $headers)) {
 
 function send($id, $message)
 {
-//    echo $message;exit;
     $access_tocken = "5421b067c9d1ca7dca56361fdc232c2ff04a8c9f6fb50f02992aa5b91c122398cb5c3eede760689e41fda";
     $secret = "9e5c1789c3eebc1d75";
     $url = 'https://api.vk.com/method/messages.send';
@@ -65,5 +64,4 @@ function send($id, $message)
         )
     )));
 }
-
 ?>

@@ -17,9 +17,6 @@
     <title>Hookah Originals</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <!--
-    CSS
-    ============================================= -->
     <link href="http://allfont.ru/allfont.css?fonts=dynarshadow-bold" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
@@ -28,16 +25,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <!--    <link rel="stylesheet" href="-->
-    <?php //echo get_template_directory_uri(); ?><!--/css/modal-callback.css">-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
-    <!-- между открывающим и закрывающим тегом head -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
-
-
-    <!-- далее инициализировать плагин на элементах <select>, чтобы стилизовать их -->
-
 </head>
 <body>
 <!-- Start Banner Area -->
@@ -49,24 +39,17 @@
                 <div class="header-wrap">
                     <div class="header-top d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <!--<a href="#home"><img src="img/logo-hookah.png" alt=""></a>-->
                             <p style="font-size:26px; font-weight:bold; color:white; font-family:'olietta script lyrica bolditalic';display: inline-block;">
                                 Hookah-Originals</p>
                         </div>
-                        <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 text-center">-->
-                        <!--<button class="modalbox backcall">Заказать</button>-->
-                        <!--</div>-->
                         <div class="main-menubar d-flex align-items-center">
-
                             <nav class="hide">
                                 <a href="#home">Главная</a>
                                 <a href="#feature">Полезно знать</a>
                                 <a href="#about">Отзывы</a>
                                 <a href="#application">Заявка</a>
                                 <a class="phone " href="tel:+79002475139">+7 900 24-75-139</a>
-
                             </nav>
-
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                         </div>
                     </div>
@@ -178,13 +161,10 @@
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
                             <b>Ваше имя:</b><br>
                             <input name="name" type="text" size="20"><br/>
-
                             <b>Ваш телефон:</b><br>
                             <input name="phone" id="phone1" type="text"><br/>
-
                             <b>Когда и куда доставить:</b><br>
                             <input name="addres" type="text" size="20"><br/>
-
                             <b>Кол-во кальянов:</b> <input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
                         </div>
@@ -206,7 +186,7 @@
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
-                            <b>Выберите тобак:</b><br/>
+                            <b>Выберите табак:</b><br/>
                             <select name="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
                                     multiple="multiple">
                                 <?php
@@ -223,7 +203,6 @@
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
-
                             <div class="navbar-left mb-1em"><b>Итого: </b><span id="result">0</span> руб.</div>
                             <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
@@ -318,7 +297,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form.js"></script>
-<!--<script type="text/javascript" src="--><?php //echo get_template_directory_uri(); ?><!--/js/form-callback.js"></script>-->
 <script>
     $(document).ready(function () {
         $(".formcolback-select").select2();
