@@ -20,7 +20,7 @@ function calc() {
     for(var i =0; i< tobacco.selectedOptions.length; i++){
         price += parseInt(tobacco.selectedOptions[i].value.split(':')[1]);
     }
-    price = parseInt(count.value) * 1200;
+    price += parseInt(count.value) * 1200;
 
     result.innerHTML = price;
     resultInput.value = price;
