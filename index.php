@@ -48,7 +48,7 @@
                 <div class="header-wrap">
                     <div class="header-top d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <p style="font-size:26px; font-weight:bold; color:white; font-family:'olietta script lyrica bolditalic';display: inline-block;">
+                            <p class="logo-text">
                                 Hookah-Originals</p>
                         </div>
                         <div class="main-menubar d-flex align-items-center">
@@ -171,7 +171,7 @@
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
                             <h4>Ваш телефон:</h4><br>
-                            <input name="phone" id="phone1" type="text"><br/>
+                            <input name="phone" id="phone1" type="number"><br/>
                             <h4>Когда доставить:</h4>
                             <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
                                 <pre id="output"></pre></div>

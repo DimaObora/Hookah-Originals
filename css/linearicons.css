@@ -10,6 +10,14 @@
 	font-style: normal;
 }
 
+@font-face {
+// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+font-family: "olietta script lyrica bolditalic";
+// адрес шрифта и тип
+src: url("../fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 .lnr {
 	font-family: 'Linearicons-Free';
 	speak: none;
