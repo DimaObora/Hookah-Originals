@@ -87,6 +87,16 @@ pre {
 .photos-of-the-full-width{
     max-width: 122% !important;%;
 }
+@media (max-width: 768px){
+.image-absolute {
+    overflow: hidden;
+}
+}
+@media (width: 1280px){
+    .member-area {
+        background-position: 0px 300px!important;
+    }
+}
 .well-4{padding-bottom:80px;}
 @media (min-width: 992px)
 {.well-4{padding-top: 119px;padding-bottom:121px;}}
