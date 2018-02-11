@@ -39,6 +39,12 @@
 
 </head>
 <body>
+<div id="responsesend">
+    <center>
+       <h1>Ваша заявка отправлена, спасибо, что пользуетесь нашими услугами, мы вам перезоним для уточнения заказа в течении часа.</h1>
+        <button type="button" id="responseclose">Закрыть</button>
+    </center>
+</div>
 <!-- Start Banner Area -->
 <section class="banner-area relative" id="home">
     <div class="container">

@@ -85,12 +85,16 @@ $(document).ready(function () {
         $(".active-member-carousel").trigger('prev.owl.carousel');
     });
 
-
     // -------   Mail Send ajax
     $(document).ready(function () {
         var form = $('#order-form'); // contact form
         var submit = $('#sends'); // submit button
-        var alert = $('.alert-msg'); // alert div for show alert message
+        var alert = $('#responsesend'); // alert div for show alert message
+        //кнопка скрытия модалки
+        $("#responseclose").on("click", function () {
+            alert.fadeOut();
+        });
+        // alert.fadeOut;
 
         // убираем отправку формы
         form.submit(function () {
@@ -107,14 +111,11 @@ $(document).ready(function () {
                 dataType: 'html', // request type html/json/xml
                 data: form.serialize(), // serialize form data
                 beforeSend: function () {
-                    alert.fadeOut();
                     submit.html('Отправка....'); // change submit button text
-                    // submit.disable();
                 },
                 success: function (data) {
-                    alert.html(data).fadeIn(); // fade in response data
-                    form.trigger('reset'); // reset form
-                    // submit.attr("style", "display: none !important"); // reset submit button text
+                    alert.fadeIn(); // fade in response data
+                    // form.trigger('reset'); // reset form
                     submit.html('Отправленно'); // change submit button text
                     submit.prop("disabled", true);
                 },
