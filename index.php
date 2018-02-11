@@ -171,11 +171,11 @@
     </div>
     <div class="container-fluid">
         <div class="row row-md-right">
-            <div class="col-lg-6 col-md-5 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
+            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
                 <div class="container">
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
-                        <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
                             <h4>Ваш телефон:</h4><br>
@@ -189,7 +189,7 @@
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                                   onchange="calc()"/><br/>
                         </div>
-                        <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
+                        <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
                             <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
                                     multiple="multiple">

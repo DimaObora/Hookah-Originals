@@ -202,7 +202,7 @@ pre {
 *, *:before, *:after {
     box-sizing: border-box!important;
 }
-@media (min-width: 991px){
+
     /*.c-btn{*/
         /*min-width: 341px !important;*/
     /*}*/
@@ -211,6 +211,12 @@ pre {
     }
     .select2{
         width: 100%!important;
+    }
+@media (max-width: 768px) and (min-width: 640px) {
+    .image-absolute-left img {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-8%);
     }
 }
 
