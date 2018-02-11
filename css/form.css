@@ -47,11 +47,13 @@ input {
 
 .mb-1em {
     margin-bottom: 2em;
-    padding: 0.7em 6em;
+    padding: 0.7em 2em;
     background: #efefef;
     border-bottom: 3px solid red;
     margin-right: 0em;
     margin-top: 3em;
+    width: 100%;
+    text-align: center;
 }
 
 .formcolback-select {
@@ -104,6 +106,31 @@ pre {
         height: 100%;
         max-width: none;
     }
+}
+@media (max-width: 640px) {
+    .image-absolute {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100.02%;
+    }
+    .image-absolute img {
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 100%;
+        max-width: none;
+    }
+    .img-responsive{
+        display: none;
+    }
+    .member-area {
+        background-position: -43px 93px;
+        background-size: 279%;
+    }
+
 }
 @media (min-width: 992px) and (min-width: 2051px) {
     .image-absolute img {
@@ -180,7 +207,10 @@ pre {
         min-width: 341px !important;
     }
     .delivery-address{
-        min-width: 416px !important;
+        width: 100% !important;
+    }
+    .select2{
+        width: 100%!important;
     }
 }
 
