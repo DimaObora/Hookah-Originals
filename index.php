@@ -166,7 +166,7 @@
             </div>
             <div class="about-details col-lg-5 col-md-12">
                 <div class="container">
-                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post" class="mt-50">
+                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post" class="mt-50 mb-25">
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
@@ -178,7 +178,7 @@
                             <br/>
                             <h4>Когда забрать:</h4>
                             <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
-                                <pre id="output"></pre></div>
+                                <pre id="output-2"></pre></div>
                             <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
@@ -329,6 +329,7 @@
         .on('submit', function(d) {
             output.innerText = d;
         });
+
 
     var el = document.querySelector('.c-datepicker-btn');
     el.addEventListener('click', function() {
