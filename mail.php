@@ -1,6 +1,6 @@
 <?php
 $sendto   = "web-originals@yandex.ru";
-$address = $_POST['addres'];
+$address = $_POST['address'];
 $username = $_POST['name'];
 $userphone = $_POST['phone'];
 $usercount = $_POST['count'];
