@@ -1984,7 +1984,7 @@ nav a:hover {
   line-height: 40px;
   padding: 0 30px;
   border-radius: 20px;
-  background: transparent;
+  /* background: transparent; */
   border: 1px solid #fff;
   color: #222222;
   display: inline-block;
@@ -1995,6 +1995,7 @@ nav a:hover {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  background-image: -webkit-linear-gradient(0deg, #691cff 0%, #f51cb0 100%);
 }
 
 .primary-btn:focus {

@@ -63,7 +63,7 @@ input {
 .select2-container .select2-selection--multiple {
     min-height: 42px !important;
     border-radius: 0 !important;
-    margin-bottom: 6.6% !important;
+    margin-bottom: 4.6% !important;
 }
 
 .datatimepicer {
@@ -180,7 +180,7 @@ pre {
 .bg-secondary a:hover, .bg-secondary-1 a:hover{color:#ae2f3d;}
 .bg-secondary .btn-default,.bg-secondary-1 .btn-default{color:#fff;border-color:#fff;background-color:transparent;}
 .bg-secondary .btn-default:hover,.bg-secondary-1 .btn-default:hover{color:#312944;background-color:#fff;}
-.bg-secondary .btn-primary:hover,.bg-secondary-1 .btn-primary:hover{color:#fff;}.bg-secondary-1{background-color:#1c474c;}
+.bg-secondary .btn-primary:hover,.bg-secondary-1 .btn-primary:hover{color:#fff;}.bg-secondary-1{background-color:#000;}
 .bg-secondary-1 .btn-default:hover{color:#000;}
 @media (min-width: 991px) {
     .row {
@@ -203,9 +203,9 @@ pre {
     box-sizing: border-box!important;
 }
 @media (min-width: 991px){
-    .c-btn{
-        min-width: 341px !important;
-    }
+    /*.c-btn{*/
+        /*min-width: 341px !important;*/
+    /*}*/
     .delivery-address{
         width: 100% !important;
     }
