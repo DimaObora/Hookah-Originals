@@ -28,6 +28,15 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
+
 </head>
 <body>
 <!-- Start Banner Area -->
@@ -151,20 +160,22 @@
 <section class="about-area" id="application">
     <div class="container-fluid">
         <div class="row  d-flex justify-content-start align-items-center">
-            <div class="col-lg-6 col-md-12 no-padding">
-                <img class="img-fluid"
+            <div class="col-lg-6 col-md-12 no-padding photo-near-calculator">
+                <img class="img-fluid photos-of-the-full-width"
                      src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" alt="">
             </div>
             <div class="about-details col-lg-5 col-md-12">
                 <div class="container">
-                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post">
+                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post" class="mt-50">
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
                             <h4>Ваш телефон:</h4><br>
                             <input name="phone" id="phone1" type="text"><br/>
-                            <h4>Когда и куда доставить:</h4><br>
-                            <input name="addres" type="text" size="20"><br/>
+                            <h4>Когда доставить:</h4>
+                            <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
+                                <pre id="output"></pre></div>
+                            <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
                         </div>
@@ -203,6 +214,8 @@
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
+                            <h4>Куда доставить:</h4><br>
+                            <textarea rows="3" cols="35" name="text" style="min-width: 335px"></textarea>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                             <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
@@ -297,10 +310,27 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form.js"></script>
+<script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
 <script>
     $(document).ready(function () {
         $(".formcolback-select").select2();
     });
+</script>
+<script>
+
+    var picker = new MaterialDatetimePicker({})
+        .on('submit', function(d) {
+            output.innerText = d;
+        });
+
+    var el = document.querySelector('.c-datepicker-btn');
+    el.addEventListener('click', function() {
+        picker.open();
+    }, false);
+
 </script>
 </body>
 </html>

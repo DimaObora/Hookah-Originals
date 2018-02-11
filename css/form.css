@@ -61,3 +61,21 @@ input{
     border-radius: 0 !important;
     margin-bottom: 6.6% !important;
 }
+.datatimepicer{
+    margin-bottom: 2.5em;
+    padding: 0.7em 1.7em;
+    background: #efefef;
+    margin-right: 0em;
+    margin-top: 1.6em;
+    min-width: 276px!important;
+    min-height: 42px!important;
+}
+pre {
+    margin-bottom: 0rem!important;
+}
+.photo-near-calculator{
+    overflow: hidden;
+}
+.photos-of-the-full-width{
+    max-width: 110% !important;%;
+}
