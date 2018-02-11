@@ -174,10 +174,10 @@
                             <h4>Ваш телефон:</h4><br>
                             <input name="phone" id="phone1"><br/>
                             <h4>Когда доставить:</h4>
-                            <input class="c-datepicker-input" />
+                            <input name="datefrom" class="c-datepicker-input" />
                             <br/>
                             <h4>Когда забрать:</h4>
-                            <input class="c-datepicker-input" />
+                            <input name="dateto" class="c-datepicker-input" />
                             <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>

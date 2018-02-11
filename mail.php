@@ -6,6 +6,8 @@ $userphone = $_POST['phone'];
 $usercount = $_POST['count'];
 $userflask = $_POST['flask'];
 $usertobacco = $_POST['tobacco'];
+$datefrom = $_POST['datefrom'];
+$dateto = $_POST['dateto'];
 $result = $_POST['result'];
 // Формирование заголовка письма
 $subject  = "Новое сообщение";
@@ -22,6 +24,8 @@ $msg .= "<p><strong>Адресс:</strong> ".$address."</p>\r\n";
 $msg .= "<p><strong>Количество кальянов:</strong> ".$usercount."</p>\r\n";
 $msg .= "<p><strong>Что налить в колбу:</strong> ".$userflask."</p>\r\n";
 $msg .= "<p><strong>Табак:</strong> ".$usertobacco."</p>\r\n";
+$msg .= "<p><strong>Доставить:</strong> ".$datefrom."</p>\r\n";
+$msg .= "<p><strong>Забрать:</strong> ".$dateto."</p>\r\n";
 $msg .= "<p><strong>Итого:</strong> ".$result."</p>\r\n";
 $msg .= "</body></html>";
 
@@ -31,6 +35,8 @@ $msgvk .= "Адресс: ".$address."\r\n";
 $msgvk .= "Количество кальянов:".$usercount."\r\n";
 $msgvk .= "Что налить в колбу:".$userflask."\r\n";
 $msgvk .= "Табак:".$usertobacco."\r\n";
+$msgvk .= "Доставить:".$datefrom."\r\n";
+$msgvk .= "Забрать:".$dateto."\r\n";
 $msgvk .= "Итого:".$result."\r\n";
 
 send("2000000182",'Заказ кальяна'."\r\n".$msgvk);
