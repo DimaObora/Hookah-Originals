@@ -1,5 +1,5 @@
 .select {
-    position:relative;
+    position: relative;
     background-position: 95% 50%;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -7,6 +7,7 @@
     width: 100%;
     vertical-align: top;
 }
+
 select > option {
     background-color: transparent;
     border: 0;
@@ -27,9 +28,7 @@ select > option {
     margin-bottom: 1em;
 }
 
-
-
-input{
+input {
     font-size: 14px;
     padding: 10px 40px 10px 12px;
     border: none;
@@ -45,7 +44,8 @@ input{
     -moz-appearance: none;
     margin-top: 1em;
 }
-.mb-1em{
+
+.mb-1em {
     margin-bottom: 2em;
     padding: 0.7em 6em;
     background: #efefef;
@@ -53,29 +53,35 @@ input{
     margin-right: 0em;
     margin-top: 3em;
 }
-.formcolback-select{
+
+.formcolback-select {
     width: 100% !important;
 }
-.select2-container .select2-selection--multiple{
+
+.select2-container .select2-selection--multiple {
     min-height: 42px !important;
     border-radius: 0 !important;
     margin-bottom: 6.6% !important;
 }
-.datatimepicer{
+
+.datatimepicer {
     margin-bottom: 2.5em;
     padding: 0.7em 1.7em;
     background: #efefef;
     margin-right: 0em;
     margin-top: 1.6em;
-    min-width: 276px!important;
-    min-height: 42px!important;
+    min-width: 276px !important;
+    min-height: 42px !important;
 }
+
 pre {
-    margin-bottom: 0rem!important;
+    margin-bottom: 0rem !important;
 }
-.photo-near-calculator{
+
+.photo-near-calculator {
     overflow: hidden;
 }
+
 .photos-of-the-full-width{
     max-width: 122% !important;%;
 }
@@ -133,7 +139,7 @@ pre {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
-}
+
 @media (min-width: 992px) and (min-width: 2051px) {
     .image-absolute-left img {
         left: 0;
@@ -177,3 +183,28 @@ pre {
         min-width: 416px !important;
     }
 }
+
+
+.photos-of-the-full-width {
+    max-width: 122% !important;
+}
+
+#responsesend {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 10%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 99999;
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#responsesend h1 {
+    color: white;
+}
+

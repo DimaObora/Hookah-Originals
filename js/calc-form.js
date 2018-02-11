@@ -2,6 +2,10 @@
  * Created by игорь on 07.02.2018.
  * Функция подсчета стоимости услуг на создания дизайна сайта
  */
+$(document).ready(function () {
+    calc();
+});
+
 function calc() {
     //получаем ссылку на элемент Select (Что налить в колбу:)
     var flask = document.getElementById("flask");

@@ -39,6 +39,12 @@
 
 </head>
 <body>
+<div id="responsesend">
+    <center>
+       <h1>Ваша заявка отправлена, спасибо, что пользуетесь нашими услугами, мы вам перезоним для уточнения заказа в течении часа.</h1>
+        <button type="button" id="responseclose">Закрыть</button>
+    </center>
+</div>
 <!-- Start Banner Area -->
 <section class="banner-area relative" id="home">
     <div class="container">
@@ -167,19 +173,18 @@
         <div class="row row-md-right">
             <div class="col-lg-6 col-md-5 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
                 <div class="container">
-                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post" class="mt-50 mb-25">
+                    <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
+                    <form id="order-form" action="#" method="post" class="mt-50 mb-25">
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
                             <h4>Ваш телефон:</h4><br>
-                            <input name="phone" id="phone1" type="number"><br/>
+                            <input name="phone" id="phone1"><br/>
                             <h4>Когда доставить:</h4>
-                            <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
-                                <pre id="output"></pre></div>
+                            <input name="datefrom" class="c-datepicker-input" />
                             <br/>
                             <h4>Когда забрать:</h4>
-                            <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
-                                <pre id="output-2"></pre></div>
+                            <input name="dateto" class="c-datepicker-input" />
                             <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                                   onchange="calc()"/><br/>
@@ -220,12 +225,12 @@
                                 ?>
                             </select><br/>
                             <h4>Куда доставить:</h4><br>
-                            <textarea rows="3" cols="35" name="text" class="delivery-address"></textarea>
+                            <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                             <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
                             <div class="col-lg-12">
-                                <button type="submit" id="sends"
+                                <button id="sends"
                                         class="pull-right primary-btn d-inline-flex align-items-center mt-10" style="color: white">
                                     Заказать
                                 </button>
@@ -325,18 +330,14 @@
     });
 </script>
 <script>
-
-    var picker = new MaterialDatetimePicker({})
-        .on('submit', function(d) {
-            output.innerText = d;
-        });
-
-
-    var el = document.querySelector('.c-datepicker-btn');
-    el.addEventListener('click', function() {
-        picker.open();
-    }, false);
-
+    var input = document.querySelectorAll('.c-datepicker-input');
+    input.forEach(function (inputEl) {
+        var picker = new MaterialDatetimePicker({})
+            .on('submit', function(d) {
+                inputEl.value = d.format("DD/MM/YYYY HH:mm");
+            });
+        inputEl.addEventListener('focus', function() { picker.open();}, false);
+    });
 </script>
 </body>
 </html>
