@@ -2244,6 +2244,7 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-size: 100%;
+  background-attachment: fixed;
 }
 
 .member-area .overlay-bg {
@@ -2573,4 +2574,6 @@ nav a:hover {
   font-family:'olietta script lyrica bolditalic';
   display: inline-block;;
 }
+
+/*--------------------------------------------*/
 

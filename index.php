@@ -157,14 +157,15 @@
 <!-- End feature Area -->
 
 <!-- Start service Area -->
-<section class="about-area" id="application">
+
+<!-- End service Area -->
+<section class=" bg-secondary-1 relative">
+    <div class="image-absolute image-absolute-left">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">
+    </div>
     <div class="container-fluid">
-        <div class="row  d-flex justify-content-start align-items-center">
-            <div class="col-lg-6 col-md-12 no-padding photo-near-calculator">
-                <img class="img-fluid photos-of-the-full-width"
-                     src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" alt="">
-            </div>
-            <div class="about-details col-lg-5 col-md-12">
+        <div class="row row-md-right">
+            <div class="col-lg-6 col-md-5 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
                 <div class="container">
                     <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post" class="mt-50 mb-25">
                         <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
@@ -181,7 +182,7 @@
                                 <pre id="output-2"></pre></div>
                             <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
-                                                           onchange="calc()"/><br/>
+                                                                  onchange="calc()"/><br/>
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
@@ -219,7 +220,7 @@
                                 ?>
                             </select><br/>
                             <h4>Куда доставить:</h4><br>
-                            <textarea rows="3" cols="35" name="text" style="min-width: 335px"></textarea>
+                            <textarea rows="3" cols="35" name="text" class="delivery-address"></textarea>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                             <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
@@ -236,13 +237,11 @@
         </div>
     </div>
 </section>
-<!-- End service Area -->
-
 <!-- Start member Area -->
-<section class="member-area relative pt-100 pb-100" id="about">
+<section class="member-area relative pt-100 pb-100 parallax-window " data-parallax = " scroll " data-image-src = "../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg" id="about">
     <div class="overlay overlay-bg"></div>
     <div class="container relative">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="active-member-carousel">
                 <div class="single-member item">
                     <div class="member-info d-flex flex-row justify-content-center">
@@ -318,9 +317,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
+<script  src = "<?php echo get_template_directory_uri(); ?>/js/parallax.min.js " > </script>
 <script>
     $(document).ready(function () {
         $(".formcolback-select").select2();
+        $ ( ' .parallax-window ' ). parallax ({imageSrc :  '../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg' });
     });
 </script>
 <script>
