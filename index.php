@@ -176,6 +176,10 @@
                             <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
                                 <pre id="output"></pre></div>
                             <br/>
+                            <h4>Когда забрать:</h4>
+                            <div class="linkblock c-btn c-datepicker-btn datatimepicer" >
+                                <pre id="output"></pre></div>
+                            <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                            onchange="calc()"/><br/>
                         </div>
