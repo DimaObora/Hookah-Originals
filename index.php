@@ -1,3 +1,6 @@
+<?php
+$settings =  get_option('hookah_settings');
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
@@ -63,7 +66,7 @@
                                 <a href="#feature">Полезно знать</a>
                                 <a href="#about">Отзывы</a>
                                 <a href="#application">Заявка</a>
-                                <a class="phone " href="tel:+79002475139">+7 900 24-75-139</a>
+                                <a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
                             </nav>
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                         </div>
@@ -174,6 +177,8 @@
             <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
                 <div class="container">
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
+                    <input type="hidden" id="price-hookah-c" value="<?php echo $settings['hookah_text_field_2']; ?>">
+                    <input type="hidden" id="price-hookah-h" value="<?php echo $settings['hookah_text_field_3']; ?>">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
                         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
@@ -291,10 +296,9 @@
     <div class="container">
         <div class="row footer-content">
             <div class="col-lg-6 copy-right-text">
-                @ 2018 Все права защищены. Создание сайта: <a href="https://web-originals.ru/">&nbsp;&nbsp; Web-студия
-                    "Originals"</a>
+                <?php echo $settings['hookah_text_field_7']; ?>
             </div>
-            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:+79002475139">+7(900)24-75-139&nbsp;&nbsp;</a>Дмитрий
+            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a><?php echo $settings['hookah_text_field_1']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>

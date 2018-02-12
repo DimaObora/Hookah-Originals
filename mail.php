@@ -1,4 +1,7 @@
 <?php
+require_once( dirname(__FILE__) . '/../../../wp-load.php' );
+$settings =  get_option('hookah_settings');
+
 $sendto   = "web-originals@yandex.ru";
 $address = $_POST['address'];
 $username = $_POST['name'];
@@ -39,7 +42,8 @@ $msgvk .= "Доставить:".$datefrom."\r\n";
 $msgvk .= "Забрать:".$dateto."\r\n";
 $msgvk .= "Итого:".$result."\r\n";
 
-send("2000000182",'Заказ кальяна'."\r\n".$msgvk);
+//send("2000000182",'Заказ кальяна'."\r\n".$msgvk);
+send($settings,'Заказ кальяна'."\r\n".$msgvk);
 
 // отправка сообщения
 if (@mail($sendto, $subject, $msg, $headers)) {
@@ -48,13 +52,15 @@ if (@mail($sendto, $subject, $msg, $headers)) {
     echo "false";
 }
 
-function send($id, $message)
+function send($settings, $message)
 {
     $access_tocken = "5421b067c9d1ca7dca56361fdc232c2ff04a8c9f6fb50f02992aa5b91c122398cb5c3eede760689e41fda";
+    $access_tocken = $settings['hookah_text_field_4'];
     $secret = "9e5c1789c3eebc1d75";
+    $secret = $settings['hookah_text_field_5'];
     $url = 'https://api.vk.com/method/messages.send';
     $params = array(
-        'peer_id' => $id,    // Кому отправляем
+        'peer_id' => $settings['hookah_text_field_6'],    // Кому отправляем
         'message' => $message,   // Что отправляем
         'access_token' => $access_tocken,  // access_token можно вбить хардкодом, если работа будет идти из под одного юзера
         'v'=>'5.38',
