@@ -22,7 +22,7 @@
   color: #777777;
   font-weight: 300;
 }
-
+.well-4{padding-bottom:80px;}
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #777777;
@@ -752,11 +752,6 @@ td, th {
   background: #f9fafc;
 }
 
-@media (max-width: 767px) {
-  .no-flex-xs {
-    display: block !important;
-  }
-}
 
 .row.no-margin {
   margin-left: 0;
@@ -1899,25 +1894,7 @@ nav {
   transform-origin: 100% 50%;
 }
 
-@media (max-width: 767px) {
-  nav {
-    margin-right: 0;
-    position: absolute;
-    right: 0;
-    top: 47px;
-    text-align: right;
-    padding: 20px 0;
-    z-index: 5;
-    background: #fff;
-    width: 11em;
-  }
-  nav a {
-    color: #691cff !important;
-  }
-  nav a:hover {
-    color: #691cff;
-  }
-}
+
 
 nav.hide {
   transform: scale(0);
@@ -1932,11 +1909,7 @@ nav a {
   display: inline-block;
 }
 
-@media (max-width: 767px) {
-  nav a {
-    margin: 5px 25px;
-  }
-}
+
 
 nav a:hover {
   color: #fff;
@@ -1959,11 +1932,7 @@ nav a:hover {
   margin-bottom: 0;
 }
 
-@media (max-width: 991px) {
-  .section-title p br {
-    display: none;
-  }
-}
+
 
 .p1-gradient-bg, .primary-btn:after, .is-sticky .default-header, .single-img, .member-area .overlay-bg, .contact-area .primary-btn, .footer-social a:hover {
   background-image: -moz-linear-gradient(0deg, #691cff 0%, #f51cb0 100%);
@@ -2028,17 +1997,7 @@ nav a:hover {
   background: url(../img/hookahgirl-lera-7.jpg) no-repeat center center/cover;
 }
 
-@media (max-width: 767px) {
-  .banner-area .fullscreen {
-    height: 700px !important;
-  }
-}
 
-@media (max-width: 767px) {
-  .banner-content {
-    margin-top: 100px;
-  }
-}
 
 .banner-content h1 {
   color: #fff;
@@ -2050,29 +2009,7 @@ nav a:hover {
   /*text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5);*/
 }
 
-@media (max-width: 991px) {
-  .banner-content h1 {
-    font-size: 36px;
-  }
-}
 
-@media (max-width: 991px) {
-  .banner-content h1 br {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .banner-content h1 {
-    font-size: 90px;
-  }
-}
-
-@media (max-width: 414px) {
-  .banner-content h1 {
-    font-size: 40px;
-  }
-}
 
 .banner-content p {
   color: #fff;
@@ -2083,17 +2020,7 @@ nav a:hover {
   font-size: 16px;
 }
 
-@media (max-width: 767px) {
-  .banner-content p {
-    margin-bottom: 20px;
-  }
-}
 
-@media (max-width: 991px) {
-  .banner-content p br {
-    display: none;
-  }
-}
 
 .quote-left h2 {
   font-weight: 100;
@@ -2103,30 +2030,7 @@ nav a:hover {
   font-weight: 600;
 }
 
-@media (max-width: 1199px) {
-  .quote-left h2 {
-    font-size: 28px;
-  }
-}
 
-@media (max-width: 991px) {
-  .quote-left h2 {
-    padding-bottom: 25px;
-    text-align: center !important;
-  }
-}
-
-@media (max-width: 414px) {
-  .quote-left h2 {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 991px) {
-  .quote-right p {
-    text-align: center !important;
-  }
-}
 
 .image {
   opacity: 1;
@@ -2183,20 +2087,7 @@ nav a:hover {
   font-size: 14px;
 }
 
-@media (max-width: 991px) {
-  .middle2 {
-    bottom: -55px;
-  }
-}
 
-@media (max-width: 414px) {
-  .middle2 {
-    width: 300px;
-  }
-  .middle2 h2 {
-    font-size: 15px;
-  }
-}
 
 .single-img:hover {
   cursor: pointer;
@@ -2290,19 +2181,7 @@ nav a:hover {
   left: -40px;
 }
 
-@media (max-width: 1199px) {
-  .member-area .prev-trigger {
-    left: 0;
-  }
-}
 
-@media (max-width: 991px) {
-  .member-area .prev-trigger {
-    left: 30%;
-    top: 100%;
-    transform: translateY(0%);
-  }
-}
 
 .member-area .next-trigger {
   position: absolute;
@@ -2311,19 +2190,7 @@ nav a:hover {
   right: -40px;
 }
 
-@media (max-width: 1199px) {
-  .member-area .next-trigger {
-    right: 0;
-  }
-}
 
-@media (max-width: 991px) {
-  .member-area .next-trigger {
-    right: 30%;
-    top: 100%;
-    transform: translateY(0%);
-  }
-}
 
 .details {
   text-align: left;
@@ -2340,17 +2207,7 @@ nav a:hover {
   padding: 25px 250px;
 }
 
-@media (max-width: 1199px) {
-  .summery {
-    padding: 25px 150px;
-  }
-}
 
-@media (max-width: 768px) {
-  .summery {
-    padding: 25px 5px;
-  }
-}
 
 .about-details h2 {
   color: white;
@@ -2359,35 +2216,13 @@ nav a:hover {
   /*margin-left: 2.5em;*/
 /*}*/
 
-@media (max-width: 991px) {
-  .about-details {
-    text-align: center;
-    margin-left: 0em;
-    padding-bottom: 2.5em;
-
-  }
-  .member-area {
-    background-position: -48px 0px;
-    background-size: 236%;
-  }
-  .pb-100 {
-    padding-bottom: 50px;
-  }
-  .pt-100 {
-    padding-top: 50px;
-  }
-}
 
 .about-area {
   background: url(../img/about-bg.jpg) no-repeat left;
   background-size: cover;
 }
 
-@media (max-width: 768px) {
-  .about-area {
-    padding: 100px 0;
-  }
-}
+
 
 .about-details h2 {
   font-weight: 200;
@@ -2399,28 +2234,12 @@ nav a:hover {
   font-weight: 600;
 }
 
-@media (max-width: 1199px) {
-  .about-details h2 {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 991px) {
-  .about-details h2 {
-    margin-top: 50px;
-  }
-}
 
 .about-details p {
   margin-top: 20px;
 }
 
-@media (max-width: 1199px) {
-  .about-details p {
-    font-size: 12px;
-    margin-bottom: 0;
-  }
-}
+
 
 .contact-area {
   background-color: #f9f9ff;
@@ -2550,15 +2369,7 @@ nav a:hover {
   transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 991px) {
-  .footer-social {
-    text-align: left;
-  }
-}@media (max-width: 360px) {
-  .about-area {
-    padding: 0px 0;
-  }
-}
+
 .quote-left span{
   color: black;
   font-weight: 600;

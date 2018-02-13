@@ -36,6 +36,7 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
 
 </head>
 <body>
@@ -173,8 +174,10 @@
         <div class="row row-md-right">
             <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
                 <div class="container">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center"><h2>Заказать кальян!</h2></div>
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
+
                         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
@@ -183,11 +186,12 @@
                             <h4>Когда доставить:</h4><br>
                             <input name="datefrom" class="c-datepicker-input" />
                             <br/>
-                            <h4>Когда забрать:</h4><br>
-                            <input name="dateto" class="c-datepicker-input" />
-                            <br/>
+
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
-                                                                  onchange="calc()"/><br/>
+                                                                  onchange="calc()"/>
+                            <br/>
+                            <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
+                            <br/>
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
@@ -224,9 +228,11 @@
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
+                            <h4>Когда забрать:</h4><br>
+                            <input name="dateto" class="c-datepicker-input" /><br>
                             <h4>Куда доставить:</h4><br>
                             <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
-                            <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
+                            <br>
                             <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
                             <div class="col-lg-12">
@@ -334,7 +340,7 @@
     input.forEach(function (inputEl) {
         var picker = new MaterialDatetimePicker({})
             .on('submit', function(d) {
-                inputEl.value = d.format("DD/MM/YYYY HH:mm");
+                inputEl.value = d.format("DD.MM.YYYY HH:mm");
             });
         inputEl.addEventListener('focus', function() { picker.open();}, false);
     });

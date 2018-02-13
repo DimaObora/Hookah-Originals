@@ -87,106 +87,14 @@ pre {
 .photos-of-the-full-width{
     max-width: 122% !important;%;
 }
-@media (max-width: 768px){
+
 .image-absolute {
     overflow: hidden;
 }
-}
-@media (width: 1280px){
-    .member-area {
-        background-position: 0px 300px!important;
-    }
-}
-.well-4{padding-bottom:80px;}
-@media (min-width: 992px)
-{.well-4{padding-top: 119px;padding-bottom:121px;}}
-@media (min-width: 992px) {
-    .image-absolute {
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100.02%;
-    }
-    .image-absolute img {
-        position: absolute;
-        right: 0;
-        left: 0;
-        height: 100%;
-        max-width: none;
-    }
-}
-@media (max-width: 640px) {
-    .image-absolute {
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100.02%;
-    }
-    .image-absolute img {
-        position: absolute;
-        right: 0;
-        left: 0;
-        height: 100%;
-        max-width: none;
-    }
-    .img-responsive{
-        display: none;
-    }
-    .member-area {
-        background-position: -43px 93px;
-        background-size: 279%;
-    }
 
-}
-@media (min-width: 992px) {
-    .image-absolute {
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100.02%;
-    }
-    .image-absolute img {
-        position: absolute;
-        right: 0;
-        left: 0;
-        height: 100%;
-        max-width: none;
-    }
-}
-@media  (min-width: 992px) {
-    .image-absolute img {
-        height: auto;
-        width: 80em;
-    }
-}
-@media (min-width: 992px) {
-    .image-absolute-left {
-        right: calc(50% - 1200px/2 + 50px + (1200px/12)*6);
-    }
-    .image-absolute-left img {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-    }
-}
-@media (min-width: 992px) and (min-width: 2051px) {
-    .image-absolute-left img {
-        left: 0;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@media (min-width: 992px) {
-    .image-absolute-right {
-        left: calc(50% - 1200px/2 + -50px + (1200px/12)*6);
-    }
-}
+
+
+
 .row-md-right{-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;}
 .bg-secondary,.bg-secondary-1{background-color:#312944;color:#fff;}
 
@@ -256,4 +164,6 @@ pre {
 #responsesend h1 {
     color: white;
 }
-
+.title-hookah{
+    margin-top: 2em;
+}
