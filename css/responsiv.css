@@ -167,16 +167,20 @@
     nav {
         margin-right: 0;
         position: absolute;
-        right: 0;
+        right: -15px;
         top: 47px;
         text-align: right;
         padding: 20px 0;
         z-index: 5;
         background: #fff;
-        width: 11em;
+        width: 26em;
     }
     nav a {
         color: #691cff !important;
+        display: block;
+        border-bottom: 1px solid #691cff;
+        padding-bottom: 0.25em;
+        padding-top: 0.25em;
     }
     nav a:hover {
         color: #691cff;

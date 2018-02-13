@@ -59,11 +59,11 @@
                                 Hookah-Originals</p>
                         </div>
                         <div class="main-menubar d-flex align-items-center">
-                            <nav class="hide">
+                            <nav class="hide text-center">
                                 <a href="#home">Главная</a>
                                 <a href="#feature">Полезно знать</a>
                                 <a href="#about">Отзывы</a>
-                                <a href="#application">Заявка</a>
+                                <a href="#application">Заказ кальяна</a>
                                 <a class="phone " href="tel:+79002475139">+7 900 24-75-139</a>
                             </nav>
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
@@ -166,7 +166,7 @@
 <!-- Start service Area -->
 
 <!-- End service Area -->
-<section class=" bg-secondary-1 relative">
+<section class=" bg-secondary-1 relative" id="application">
     <div class="image-absolute image-absolute-left">
         <img src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">
     </div>
