@@ -172,9 +172,9 @@
     </div>
     <div class="container-fluid">
         <div class="row row-md-right">
-            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
+            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details text-center">
                 <div class="container">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center"><h2>Заказать кальян!</h2></div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать кальян!</h2></div>
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
 
