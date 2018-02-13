@@ -190,8 +190,10 @@
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                                   onchange="calc()"/>
                             <br/>
-                            <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
-                            <br/>
+                            <h4>Куда доставить:</h4><br>
+                            <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
+                            <br>
+
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
@@ -230,10 +232,9 @@
                             </select><br/>
                             <h4>Когда забрать:</h4><br>
                             <input name="dateto" class="c-datepicker-input" /><br>
-                            <h4>Куда доставить:</h4><br>
-                            <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
-                            <br>
-                            <input name="result" id="result-input" type="hidden" value="0">
+
+                            <input name="result" id="result-input" type="hidden" value="0"> <br/>
+                            <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                             <br/>
                             <div class="col-lg-12">
                                 <button id="sends"

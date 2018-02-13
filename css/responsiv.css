@@ -42,6 +42,9 @@
     }
     .member-area .next-trigger {
         right: 0;
+        left: 60%;
+        top: 100%;
+        transform: translateY(0%);
     }
     .summery {
         padding: 25px 150px;
