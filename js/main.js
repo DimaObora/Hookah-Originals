@@ -136,6 +136,9 @@ $(document).ready(function () {
         var picker = new MaterialDatetimePicker({})
             .on('submit', function(d) {
                 inputEl.value = d.format("DD.MM.YYYY HH:mm");
+                var date = new Date(d._d);
+                $("#"+inputEl.name+"hiden").val(date.getTime() /1000);
+                calc();
             });
         inputEl.addEventListener('focus', function() { picker.open();}, false);
     });
