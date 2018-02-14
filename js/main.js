@@ -126,4 +126,18 @@ $(document).ready(function () {
         });
     });
 
+    $(document).ready(function () {
+        $(".formcolback-select").select2();
+        $ ( ' .parallax-window ' ). parallax ({imageSrc :  '../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg' });
+    });
+
+    var input = document.querySelectorAll('.c-datepicker-input');
+    input.forEach(function (inputEl) {
+        var picker = new MaterialDatetimePicker({})
+            .on('submit', function(d) {
+                inputEl.value = d.format("DD.MM.YYYY HH:mm");
+            });
+        inputEl.addEventListener('focus', function() { picker.open();}, false);
+    });
+
 });
