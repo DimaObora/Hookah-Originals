@@ -39,7 +39,6 @@ function calc() {
     }
     price += parseInt(count.value) * priceOne;
     price += parseInt(count.value) * countDay * priceDay;
-    alert(parseInt(count.value) * countDay * priceDay);
     result.innerHTML = price;
     resultInput.value = price;
 }
