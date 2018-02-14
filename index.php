@@ -39,6 +39,7 @@ $settings =  get_option('hookah_settings');
           rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
 
 </head>
 <body>
@@ -61,11 +62,11 @@ $settings =  get_option('hookah_settings');
                                 Hookah-Originals</p>
                         </div>
                         <div class="main-menubar d-flex align-items-center">
-                            <nav class="hide">
+                            <nav class="hide text-center">
                                 <a href="#home">Главная</a>
                                 <a href="#feature">Полезно знать</a>
                                 <a href="#about">Отзывы</a>
-                                <a href="#application">Заявка</a>
+                                <a href="#application">Заказ кальяна</a>
                                 <a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
                             </nav>
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
@@ -168,18 +169,20 @@ $settings =  get_option('hookah_settings');
 <!-- Start service Area -->
 
 <!-- End service Area -->
-<section class=" bg-secondary-1 relative">
+<section class=" bg-secondary-1 relative" id="application">
     <div class="image-absolute image-absolute-left">
         <img src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">
     </div>
     <div class="container-fluid">
         <div class="row row-md-right">
-            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details ">
+            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details text-center">
                 <div class="container">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать кальян!</h2></div>
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
                     <input type="hidden" id="price-hookah-c" value="<?php echo $settings['hookah_text_field_2']; ?>">
                     <input type="hidden" id="price-hookah-h" value="<?php echo $settings['hookah_text_field_3']; ?>">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
+
                         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
@@ -188,11 +191,14 @@ $settings =  get_option('hookah_settings');
                             <h4>Когда доставить:</h4><br>
                             <input name="datefrom" class="c-datepicker-input" />
                             <br/>
-                            <h4>Когда забрать:</h4><br>
-                            <input name="dateto" class="c-datepicker-input" />
-                            <br/>
+
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
-                                                                  onchange="calc()"/><br/>
+                                                                  onchange="calc()"/>
+                            <br/>
+                            <h4>Куда доставить:</h4><br>
+                            <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
+                            <br>
+
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
@@ -229,10 +235,11 @@ $settings =  get_option('hookah_settings');
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
-                            <h4>Куда доставить:</h4><br>
-                            <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
+                            <h4>Когда забрать:</h4><br>
+                            <input name="dateto" class="c-datepicker-input" /><br>
+
+                            <input name="result" id="result-input" type="hidden" value="0"> <br/>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
-                            <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
                             <div class="col-lg-12">
                                 <button id="sends"
@@ -338,7 +345,7 @@ $settings =  get_option('hookah_settings');
     input.forEach(function (inputEl) {
         var picker = new MaterialDatetimePicker({})
             .on('submit', function(d) {
-                inputEl.value = d.format("DD/MM/YYYY HH:mm");
+                inputEl.value = d.format("DD.MM.YYYY HH:mm");
             });
         inputEl.addEventListener('focus', function() { picker.open();}, false);
     });
