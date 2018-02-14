@@ -1,3 +1,6 @@
+<?php
+$settings =  get_option('hookah_settings');
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
@@ -28,8 +31,24 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+
 </head>
 <body>
+<div id="responsesend">
+    <center>
+       <h1>Ваша заявка отправлена, спасибо, что пользуетесь нашими услугами, мы вам перезоним для уточнения заказа в течении часа.</h1>
+        <button type="button" id="responseclose">Закрыть</button>
+    </center>
+</div>
 <!-- Start Banner Area -->
 <section class="banner-area relative" id="home">
     <div class="container">
@@ -39,16 +58,16 @@
                 <div class="header-wrap">
                     <div class="header-top d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <p style="font-size:26px; font-weight:bold; color:white; font-family:'olietta script lyrica bolditalic';display: inline-block;">
+                            <p class="logo-text">
                                 Hookah-Originals</p>
                         </div>
                         <div class="main-menubar d-flex align-items-center">
-                            <nav class="hide">
+                            <nav class="hide text-center">
                                 <a href="#home">Главная</a>
                                 <a href="#feature">Полезно знать</a>
                                 <a href="#about">Отзывы</a>
-                                <a href="#application">Заявка</a>
-                                <a class="phone " href="tel:+79002475139">+7 900 24-75-139</a>
+                                <a href="#application">Заказ кальяна</a>
+                                <a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
                             </nav>
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
                         </div>
@@ -148,27 +167,38 @@
 <!-- End feature Area -->
 
 <!-- Start service Area -->
-<section class="about-area" id="application">
+
+<!-- End service Area -->
+<section class=" bg-secondary-1 relative" id="application">
+    <div class="image-absolute image-absolute-left">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">
+    </div>
     <div class="container-fluid">
-        <div class="row  d-flex justify-content-start align-items-center">
-            <div class="col-lg-6 col-md-12 no-padding">
-                <img class="img-fluid"
-                     src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" alt="">
-            </div>
-            <div class="about-details col-lg-5 col-md-12">
+        <div class="row row-md-right">
+            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details text-center">
                 <div class="container">
-                    <form action="<?php echo get_template_directory_uri(); ?>/mail.php" method="post">
-                        <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 select">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать кальян!</h2></div>
+                    <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
+                    <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
+                    <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
+                    <form id="order-form" action="#" method="post" class="mt-50 mb-25">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
                             <h4>Ваш телефон:</h4><br>
-                            <input name="phone" id="phone1" type="text"><br/>
-                            <h4>Когда и куда доставить:</h4><br>
-                            <input name="addres" type="text" size="20"><br/>
+                            <input name="phone" id="phone1"><br/>
+                            <h4>Когда доставить:</h4><br>
+                            <input name="datefrom" class="c-datepicker-input"  />
+                            <input type="hidden" id="datefromhiden" value="0"/>
+                            <br/>
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
-                                                           onchange="calc()"/><br/>
+                                                                  onchange="calc()"/>
+                            <br/>
+                            <h4>Куда доставить:</h4><br>
+                            <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
+                            <br>
                         </div>
-                        <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 select">
+                        <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
                             <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
                                     multiple="multiple">
@@ -179,7 +209,7 @@
                                     setup_postdata($post);
                                     ?>
                                     <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                        <?php the_title(); ?>
+                                        <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
                                     </option>
                                     <?php
                                 }
@@ -196,18 +226,21 @@
                                     setup_postdata($post);
                                     ?>
                                     <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                        <?php the_title(); ?>
+                                        <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
                                     </option>
                                     <?php
                                 }
                                 wp_reset_postdata();
                                 ?>
                             </select><br/>
+                            <h4>Когда забрать:</h4><br>
+                            <input name="dateto" class="c-datepicker-input" /><br>
+                            <input type="hidden" id="datetohiden" value="0"/>
+                            <input name="result" id="result-input" type="hidden" value="0"><br/>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
-                            <input name="result" id="result-input" type="hidden" value="0">
                             <br/>
                             <div class="col-lg-12">
-                                <button type="submit" id="sends"
+                                <button id="sends"
                                         class="pull-right primary-btn d-inline-flex align-items-center mt-10" style="color: white">
                                     Заказать
                                 </button>
@@ -219,13 +252,11 @@
         </div>
     </div>
 </section>
-<!-- End service Area -->
-
 <!-- Start member Area -->
-<section class="member-area relative pt-100 pb-100" id="about">
+<section class="member-area relative pt-100 pb-100 parallax-window " data-parallax = " scroll " data-image-src = "../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg" id="about">
     <div class="overlay overlay-bg"></div>
     <div class="container relative">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="active-member-carousel">
                 <div class="single-member item">
                     <div class="member-info d-flex flex-row justify-content-center">
@@ -270,10 +301,9 @@
     <div class="container">
         <div class="row footer-content">
             <div class="col-lg-6 copy-right-text">
-                @ 2018 Все права защищены. Создание сайта: <a href="https://web-originals.ru/">&nbsp;&nbsp; Web-студия
-                    "Originals"</a>
+                <?php echo $settings['hookah_text_field_7']; ?>
             </div>
-            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:+79002475139">+7(900)24-75-139&nbsp;&nbsp;</a>Дмитрий
+            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a><?php echo $settings['hookah_text_field_1']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -295,12 +325,12 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sticky.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form.js"></script>
-<script>
-    $(document).ready(function () {
-        $(".formcolback-select").select2();
-    });
-</script>
+<script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
+<script  src = "<?php echo get_template_directory_uri(); ?>/js/parallax.min.js " > </script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </body>
 </html>

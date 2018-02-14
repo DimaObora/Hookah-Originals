@@ -1,5 +1,5 @@
 .select {
-    position:relative;
+    position: relative;
     background-position: 95% 50%;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -7,6 +7,7 @@
     width: 100%;
     vertical-align: top;
 }
+
 select > option {
     background-color: transparent;
     border: 0;
@@ -27,9 +28,7 @@ select > option {
     margin-bottom: 1em;
 }
 
-
-
-input{
+input {
     font-size: 14px;
     padding: 10px 40px 10px 12px;
     border: none;
@@ -45,19 +44,150 @@ input{
     -moz-appearance: none;
     margin-top: 1em;
 }
-.mb-1em{
+
+.mb-1em {
     margin-bottom: 2em;
-    padding: 0.7em 6em;
+    padding: 0.7em 2em;
     background: #efefef;
     border-bottom: 3px solid red;
     margin-right: 0em;
     margin-top: 3em;
+    width: 100%;
+    text-align: center;
 }
-.formcolback-select{
+
+.formcolback-select {
     width: 100% !important;
 }
-.select2-container .select2-selection--multiple{
+
+.select2-container .select2-selection--multiple {
     min-height: 42px !important;
     border-radius: 0 !important;
-    margin-bottom: 6.6% !important;
+    margin-bottom: 4.6% !important;
+}
+
+.datatimepicer {
+    margin-bottom: 2.5em;
+    padding: 0.7em 1.7em;
+    background: #efefef;
+    margin-right: 0em;
+    margin-top: 1.6em;
+    min-width: 276px !important;
+    min-height: 42px !important;
+}
+
+pre {
+    margin-bottom: 0rem !important;
+}
+
+.photo-near-calculator {
+    overflow: hidden;
+}
+
+.photos-of-the-full-width {
+    max-width: 122% !important;
+%;
+}
+
+.image-absolute {
+    overflow: hidden;
+}
+
+.row-md-right {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.bg-secondary, .bg-secondary-1 {
+    background-color: #312944;
+    color: #fff;
+}
+
+.bg-secondary a:hover, .bg-secondary-1 a:hover {
+    color: #ae2f3d;
+}
+
+.bg-secondary .btn-default, .bg-secondary-1 .btn-default {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.bg-secondary .btn-default:hover, .bg-secondary-1 .btn-default:hover {
+    color: #312944;
+    background-color: #fff;
+}
+
+.bg-secondary .btn-primary:hover, .bg-secondary-1 .btn-primary:hover {
+    color: #fff;
+}
+
+.bg-secondary-1 {
+    background-color: #000;
+}
+
+.bg-secondary-1 .btn-default:hover {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .row {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex: 0 1 auto;
+        -webkit-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
+    display: block !important;
+    content: " ";
+}
+
+*, *:before, *:after {
+    box-sizing: border-box !important;
+}
+
+/*.c-btn{*/
+/*min-width: 341px !important;*/
+/*}*/
+.delivery-address {
+    width: 100% !important;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.photos-of-the-full-width {
+    max-width: 122% !important;
+}
+
+#responsesend {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 10%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 99999;
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#responsesend h1 {
+    color: white;
+}
+
+.title-hookah {
+    margin-top: 2em;
 }
