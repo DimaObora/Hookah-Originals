@@ -179,26 +179,24 @@ $settings =  get_option('hookah_settings');
                 <div class="container">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать кальян!</h2></div>
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
-                    <input type="hidden" id="price-hookah-c" value="<?php echo $settings['hookah_text_field_2']; ?>">
-                    <input type="hidden" id="price-hookah-h" value="<?php echo $settings['hookah_text_field_3']; ?>">
+                    <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
+                    <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
-
                         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Ваше имя:</h4><br>
                             <input name="name" type="text" size="20"><br/>
                             <h4>Ваш телефон:</h4><br>
                             <input name="phone" id="phone1"><br/>
                             <h4>Когда доставить:</h4><br>
-                            <input name="datefrom" class="c-datepicker-input" />
+                            <input name="datefrom" class="c-datepicker-input"  />
+                            <input type="hidden" id="datefromhiden" value="0"/>
                             <br/>
-
                             <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
                                                                   onchange="calc()"/>
                             <br/>
                             <h4>Куда доставить:</h4><br>
                             <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
                             <br>
-
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4><br/>
@@ -211,7 +209,7 @@ $settings =  get_option('hookah_settings');
                                     setup_postdata($post);
                                     ?>
                                     <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                        <?php the_title(); ?>
+                                        <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
                                     </option>
                                     <?php
                                 }
@@ -228,7 +226,7 @@ $settings =  get_option('hookah_settings');
                                     setup_postdata($post);
                                     ?>
                                     <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                        <?php the_title(); ?>
+                                        <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
                                     </option>
                                     <?php
                                 }
@@ -237,8 +235,8 @@ $settings =  get_option('hookah_settings');
                             </select><br/>
                             <h4>Когда забрать:</h4><br>
                             <input name="dateto" class="c-datepicker-input" /><br>
-
-                            <input name="result" id="result-input" type="hidden" value="0"> <br/>
+                            <input type="hidden" id="datetohiden" value="0"/>
+                            <input name="result" id="result-input" type="hidden" value="0"><br/>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                             <br/>
                             <div class="col-lg-12">
@@ -327,28 +325,12 @@ $settings =  get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sticky.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form.js"></script>
 <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
 <script  src = "<?php echo get_template_directory_uri(); ?>/js/parallax.min.js " > </script>
-<script>
-    $(document).ready(function () {
-        $(".formcolback-select").select2();
-        $ ( ' .parallax-window ' ). parallax ({imageSrc :  '../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg' });
-    });
-</script>
-<script>
-    var input = document.querySelectorAll('.c-datepicker-input');
-    input.forEach(function (inputEl) {
-        var picker = new MaterialDatetimePicker({})
-            .on('submit', function(d) {
-                inputEl.value = d.format("DD.MM.YYYY HH:mm");
-            });
-        inputEl.addEventListener('focus', function() { picker.open();}, false);
-    });
-</script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </body>
 </html>
