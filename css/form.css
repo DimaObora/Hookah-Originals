@@ -46,14 +46,15 @@ input {
 }
 
 .mb-1em {
-    margin-bottom: 2em;
+    margin-bottom: 6em;
     padding: 0.7em 2em;
     background: #efefef;
     border-bottom: 3px solid red;
     margin-right: 0em;
-    margin-top: 3em;
+    margin-top: 1.9em;
     width: 100%;
     text-align: center;
+    height: 42px;
 }
 
 .formcolback-select {
@@ -63,7 +64,6 @@ input {
 .select2-container .select2-selection--multiple {
     min-height: 42px !important;
     border-radius: 0 !important;
-    margin-bottom: 4.6% !important;
 }
 
 .datatimepicer {
@@ -190,4 +190,8 @@ pre {
 
 .title-hookah {
     margin-top: 2em;
+}
+.select .select2-selection, .select textarea, .select .input-kalk-1cal {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }

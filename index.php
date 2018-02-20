@@ -98,7 +98,7 @@ $settings =  get_option('hookah_settings');
         <div class="row">
             <div class="col-lg-6 col-sm-12 quote-left">
                 <h2 class="text-right">
-                    <p style="color: #a0a0a0"><span>Кальян</span> для новичков<br> и тех,<span> кто</span> редко<br>
+                    <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br>  тех,<span> кто</span> редко <br>
                         <span>курит.</span></p>
                 </h2>
             </div>
@@ -183,23 +183,20 @@ $settings =  get_option('hookah_settings');
                     <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
                         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
-                            <h4>Ваше имя:</h4><br>
-                            <input name="name" type="text" size="20"><br/>
-                            <h4>Ваш телефон:</h4><br>
-                            <input name="phone" id="phone1"><br/>
-                            <h4>Когда доставить:</h4><br>
-                            <input name="datefrom" class="c-datepicker-input"  />
-                            <input type="hidden" id="datefromhiden" value="0"/>
-                            <br/>
-                            <h4>Кол-во кальянов:</h4> <br/><input name="count" type="text" id="count" value="1"
-                                                                  onchange="calc()"/>
-                            <br/>
-                            <h4>Куда доставить:</h4><br>
+                            <h4>Ваше имя:</h4>
+                            <input class="input-kalk-1cal" name="name" type="text" size="20">
+                            <h4>Ваш телефон:</h4>
+                            <input class="input-kalk-1cal" name="phone" id="phone1">
+                            <h4>Когда доставить:</h4>
+                            <input class="input-kalk-1cal" name="datefrom" class="c-datepicker-input"  />
+                            <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
+                            <h4>Кол-во кальянов:</h4>
+                            <input class="input-kalk-1cal" name="count" type="text" id="count" value="1" onchange="calc()"/>
+                            <h4>Куда доставить:</h4>
                             <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
-                            <br>
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
-                            <h4>Что налить в колбу:</h4><br/>
+                            <h4>Что налить в колбу:</h4>
                             <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
                                     multiple="multiple">
                                 <?php
@@ -215,8 +212,8 @@ $settings =  get_option('hookah_settings');
                                 }
                                 wp_reset_postdata();
                                 ?>
-                            </select><br/>
-                            <h4>Выберите табак:</h4><br/>
+                            </select>
+                            <h4>Выберите табак:</h4>
                             <select name="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
                                     multiple="multiple">
                                 <?php
@@ -232,13 +229,12 @@ $settings =  get_option('hookah_settings');
                                 }
                                 wp_reset_postdata();
                                 ?>
-                            </select><br/>
-                            <h4>Когда забрать:</h4><br>
-                            <input name="dateto" class="c-datepicker-input" /><br>
-                            <input type="hidden" id="datetohiden" value="0"/>
-                            <input name="result" id="result-input" type="hidden" value="0"><br/>
+                            </select>
+                            <h4>Когда забрать:</h4>
+                            <input class="input-kalk-1cal" name="dateto" class="c-datepicker-input" />
+                            <input class="input-kalk-1cal" type="hidden" id="datetohiden" value="0"/>
+                            <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0"><br/>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
-                            <br/>
                             <div class="col-lg-12">
                                 <button id="sends"
                                         class="pull-right primary-btn d-inline-flex align-items-center mt-10" style="color: white">
@@ -264,7 +260,7 @@ $settings =  get_option('hookah_settings');
                              src="<?php echo get_template_directory_uri(); ?>/img/m1.jpg" alt="">
                         <div class="details">
                             <h4 class="text-white text-uppercase">Саша Простакова</h4>
-                            <p>Возрост: 26 лет<br>
+                            <p>Возрост: 26 лет
                                 ст. Старомышастовская</p>
                         </div>
                     </div>
@@ -278,7 +274,7 @@ $settings =  get_option('hookah_settings');
                              src="<?php echo get_template_directory_uri(); ?>/img/e1.jpg" alt="">
                         <div class="details">
                             <h4 class="text-white text-uppercase">Лиза</h4>
-                            <p>Возрост: 22 лет<br>
+                            <p>Возрост: 22 лет
                                 ст. Старомышастовская</p>
                         </div>
                     </div>
