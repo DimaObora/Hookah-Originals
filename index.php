@@ -353,8 +353,6 @@ $settings =  get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
 <script  src = "<?php echo get_template_directory_uri(); ?>/js/parallax.min.js " > </script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-
-
 </body>
 </html>
 
