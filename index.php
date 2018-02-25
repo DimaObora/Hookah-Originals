@@ -213,7 +213,7 @@ $settings =  get_option('hookah_settings');
                             <h4>Ваш телефон:</h4>
                             <input class="input-kalk-1cal" name="phone" id="phone1">
                             <h4>Когда доставить:</h4>
-                            <input class="input-kalk-1cal" name="datefrom" class="c-datepicker-input"  />
+                            <input class="input-kalk-1cal c-datepicker-input" name="datefrom"   />
                             <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
                             <h4>Кол-во кальянов:</h4>
                             <input class="input-kalk-1cal" name="count" type="text" id="count" value="1" onchange="calc()"/>
@@ -256,7 +256,7 @@ $settings =  get_option('hookah_settings');
                                 ?>
                             </select>
                             <h4>Когда забрать:</h4>
-                            <input class="input-kalk-1cal" name="dateto" class="c-datepicker-input" />
+                            <input class="input-kalk-1cal c-datepicker-input" name="dateto"  />
                             <input class="input-kalk-1cal" type="hidden" id="datetohiden" value="0"/>
                             <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0"><br/>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
