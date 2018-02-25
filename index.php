@@ -42,7 +42,30 @@ $settings =  get_option('hookah_settings');
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
 
 </head>
-<body>
+<body  >
+<div id="parent_popup">
+        <div class="modal-dialog block18+ col-xl-4" id="popup">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Вам уже исполнилось 18 лет?</h4>
+                </div>
+                <div class="modal-body text-center">
+                    Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия! <br>
+                    <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
+                </div>
+                <div class="modal-footer">
+
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none';">Да</button>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="<?php echo get_template_directory_uri(); ?>/404.html">Нет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
 <div id="responsesend">
     <center>
        <h1>Ваша заявка отправлена, спасибо, что пользуетесь нашими услугами, мы вам перезоним для уточнения заказа в течении часа.</h1>
@@ -91,11 +114,15 @@ $settings =  get_option('hookah_settings');
     </div>
 </section>
 <!-- End Banner Area -->
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+
+</div>
 
 <!-- Start quote Area -->
 <section class="quote-area pt-100 pb-100" id="feature">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-6 col-sm-12 quote-left">
                 <h2 class="text-right">
                     <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br>  тех,<span> кто</span> редко <br>
@@ -115,7 +142,7 @@ $settings =  get_option('hookah_settings');
 <!-- End quote Area -->
 
 <!-- Start feature Area -->
-<section class="feature-area pb-100">
+<section class="feature-area pb-100" >
     <div class="container">
         <div class="row ">
             <div class="col-lg-4 col-md-4 no-padding single-img">
@@ -165,8 +192,6 @@ $settings =  get_option('hookah_settings');
     </div>
 </section>
 <!-- End feature Area -->
-
-<!-- Start service Area -->
 
 <!-- End service Area -->
 <section class=" bg-secondary-1 relative" id="application">
@@ -328,5 +353,11 @@ $settings =  get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
 <script  src = "<?php echo get_template_directory_uri(); ?>/js/parallax.min.js " > </script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+
+
 </body>
 </html>
+
+
+
+

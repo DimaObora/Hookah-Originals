@@ -143,4 +143,20 @@ $(document).ready(function () {
         inputEl.addEventListener('focus', function() { picker.open();}, false);
     });
 
+    <!-- скрипт чтобы без чек бокса не работала кнопка да-->
+
+            $('#warning_button_yes').prop('disabled', true);
+
+            $('#agree').change(function() {
+
+                $('#warning_button_yes').prop('disabled', function(i, val) {
+                    return !val;
+                })
+            });
+
+        <!--скрипт для открытия модалки через 1с-->
+
+    var delay_popup = 1000;setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);
+
+
 });
