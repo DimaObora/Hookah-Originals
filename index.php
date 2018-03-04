@@ -42,7 +42,30 @@ $settings =  get_option('hookah_settings');
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
 
 </head>
-<body>
+<body  >
+<div id="parent_popup">
+        <div class="modal-dialog block18+ col-xl-4" id="popup">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Вам уже исполнилось 18 лет?</h4>
+                </div>
+                <div class="modal-body text-center">
+                    Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия! <br>
+                    <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
+                </div>
+                <div class="modal-footer">
+
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none';">Да</button>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="<?php echo get_template_directory_uri(); ?>/404.html">Нет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
 <div id="responsesend">
     <center>
        <h1>Ваша заявка отправлена, спасибо, что пользуетесь нашими услугами, мы вам перезоним для уточнения заказа в течении часа.</h1>
@@ -91,11 +114,15 @@ $settings =  get_option('hookah_settings');
     </div>
 </section>
 <!-- End Banner Area -->
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+
+</div>
 
 <!-- Start quote Area -->
 <section class="quote-area pt-100 pb-100" id="feature">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-6 col-sm-12 quote-left">
                 <h2 class="text-right">
                     <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br>  тех,<span> кто</span> редко <br>
@@ -115,7 +142,7 @@ $settings =  get_option('hookah_settings');
 <!-- End quote Area -->
 
 <!-- Start feature Area -->
-<section class="feature-area pb-100">
+<section class="feature-area pb-100" >
     <div class="container">
         <div class="row ">
             <div class="col-lg-4 col-md-4 no-padding single-img">
@@ -166,8 +193,6 @@ $settings =  get_option('hookah_settings');
 </section>
 <!-- End feature Area -->
 
-<!-- Start service Area -->
-
 <!-- End service Area -->
 <section class=" bg-secondary-1 relative" id="application">
     <div class="image-absolute image-absolute-left">
@@ -188,7 +213,7 @@ $settings =  get_option('hookah_settings');
                             <h4>Ваш телефон:</h4>
                             <input class="input-kalk-1cal" name="phone" id="phone1">
                             <h4>Когда доставить:</h4>
-                            <input class="input-kalk-1cal" name="datefrom" class="c-datepicker-input"  />
+                            <input class="input-kalk-1cal c-datepicker-input" name="datefrom"   />
                             <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
                             <h4>Кол-во кальянов:</h4>
                             <input class="input-kalk-1cal" name="count" type="text" id="count" value="1" onchange="calc()"/>
@@ -231,7 +256,7 @@ $settings =  get_option('hookah_settings');
                                 ?>
                             </select>
                             <h4>Когда забрать:</h4>
-                            <input class="input-kalk-1cal" name="dateto" class="c-datepicker-input" />
+                            <input class="input-kalk-1cal c-datepicker-input" name="dateto"  />
                             <input class="input-kalk-1cal" type="hidden" id="datetohiden" value="0"/>
                             <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0"><br/>
                             <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
@@ -330,3 +355,7 @@ $settings =  get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 </body>
 </html>
+
+
+
+
