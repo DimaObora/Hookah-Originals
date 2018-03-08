@@ -1,0 +1,12 @@
+/*****************************
+ All rights reserved.
+ AllFont.ru (c) 2011-2015
+ *****************************/
+@font-face {
+    font-family: 'DynarShadow Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DynarShadow Bold'), local('DynarShadow-Bold'),
+        url(http://allfont.ru/cache/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
+}

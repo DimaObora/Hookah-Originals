@@ -20,7 +20,7 @@ $settings =  get_option('hookah_settings');
     <title>Hookah Originals</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <link href="http://allfont.ru/allfont.css?fonts=dynarshadow-bold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/dynarshadow-bold.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
