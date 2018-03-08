@@ -59,7 +59,7 @@ $settings =  get_option('hookah_settings');
                         <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none';">Да</button>
                     </div>
                     <div class="col-md-6 text-center">
-                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="<?php echo get_template_directory_uri(); ?>/404.html">Нет</a>
+                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="https://www.google.ru">Нет</a>
                     </div>
                 </div>
             </div>
