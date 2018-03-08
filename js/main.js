@@ -5,14 +5,25 @@ $(document).ready(function () {
         window_height = window.innerHeight,
         header_height = $(".default-header").height(),
         header_height_static = $(".site-header.static").outerHeight(),
-        fitscreen = window_height - header_height;
+        fitscreen = window_height - header_height,
+        stickymenu = false,
+        menuopen = true;
 
-    $(".fullscreen").css("height", window_height)
+    $(".fullscreen").css("height", window_height);
     $(".fitscreen").css("height", fitscreen);
 
     //-------- Active Sticky Js ----------//
     $(".default-header").sticky({topSpacing: 0});
 
+    //отображение фона меню по кнопке
+    $(window).scroll(function(){
+        if ( $(window).scrollTop() > header_height ){
+            stickymenu = true;
+        } else {
+            stickymenu = false;
+            if(menuopen)$(".sticky-wrapper").removeClass("is-sticky");
+        }
+    });
 
     // -------   Active Mobile Menu-----//
     $(".menu-bar").on('click', function (e) {
@@ -20,6 +31,8 @@ $(document).ready(function () {
         $("nav").toggleClass('hide');
         $("span", this).toggleClass("lnr-menu lnr-cross");
         $(".main-menu").addClass('mobile-menu');
+        if(!stickymenu)$(".sticky-wrapper").toggleClass("is-sticky");
+        menuopen = !menuopen;
     });
 
     // Select all links with hashes
