@@ -20,7 +20,6 @@ $settings =  get_option('hookah_settings');
     <title>Hookah Originals</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <link href="http://allfont.ru/allfont.css?fonts=dynarshadow-bold" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
@@ -40,6 +39,16 @@ $settings =  get_option('hookah_settings');
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+    <style>
+        @font-face {
+            font-family: 'DynarShadow Bold';
+            font-style: normal;
+            font-weight: 700;
+            src: local('DynarShadow Bold'), local('DynarShadow-Bold'),
+            url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
+            url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
+        }
+    </style>
 
 </head>
 <body  >
