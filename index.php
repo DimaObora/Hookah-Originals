@@ -88,8 +88,8 @@ $settings =  get_option('hookah_settings');
                             <nav class="hide text-center">
                                 <a href="#home">Главная</a>
                                 <a href="#feature">Полезно знать</a>
-                                <a href="#about">Отзывы</a>
                                 <a href="#application">Заказ кальяна</a>
+                                <a href="#about">Отзывы</a>
                                 <a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
                             </nav>
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
