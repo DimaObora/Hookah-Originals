@@ -59,7 +59,7 @@ $settings =  get_option('hookah_settings');
                         <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none';">Да</button>
                     </div>
                     <div class="col-md-6 text-center">
-                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="<?php echo get_template_directory_uri(); ?>/404.html">Нет</a>
+                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="https://www.google.ru">Нет</a>
                     </div>
                 </div>
             </div>
@@ -85,14 +85,14 @@ $settings =  get_option('hookah_settings');
                                 Hookah-Originals</p>
                         </div>
                         <div class="main-menubar d-flex align-items-center">
-                            <nav class="hide text-center">
+                            <nav class="text-center">
                                 <a href="#home">Главная</a>
                                 <a href="#feature">Полезно знать</a>
-                                <a href="#about">Отзывы</a>
                                 <a href="#application">Заказ кальяна</a>
+                                <a href="#about">Отзывы</a>
                                 <a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
                             </nav>
-                            <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                            <div class="menu-bar"><span class="lnr lnr-cross"></span></div>
                         </div>
                     </div>
                 </div>
