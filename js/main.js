@@ -7,7 +7,7 @@ $(document).ready(function () {
         header_height_static = $(".site-header.static").outerHeight(),
         fitscreen = window_height - header_height,
         stickymenu = false,
-        menuopen = true;
+        menuopen = false;
 
     $(".fullscreen").css("height", window_height);
     $(".fitscreen").css("height", fitscreen);
@@ -31,7 +31,7 @@ $(document).ready(function () {
         $("nav").toggleClass('hide');
         $("span", this).toggleClass("lnr-menu lnr-cross");
         $(".main-menu").addClass('mobile-menu');
-        if(!stickymenu)$(".sticky-wrapper").toggleClass("is-sticky");
+        if(stickymenu)$(".sticky-wrapper").toggleClass("is-sticky");
         menuopen = !menuopen;
     });
 
