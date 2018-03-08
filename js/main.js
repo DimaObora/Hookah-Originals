@@ -284,21 +284,21 @@ $(document).ready(function () {
             y : 'год',
             yy : relativeTimeWithPlural
         },
-        meridiemParse: /ночи|утра|дня|вечера/i,
-        isPM : function (input) {
-            return /^(дня|вечера)$/.test(input);
-        },
-        meridiem : function (hour, minute, isLower) {
-            if (hour < 4) {
-                return 'ночи';
-            } else if (hour < 12) {
-                return 'утра';
-            } else if (hour < 17) {
-                return 'дня';
-            } else {
-                return 'вечера';
-            }
-        },
+        // meridiemParse: /ночи|утра|дня|вечера/i,
+        // isPM : function (input) {
+        //     return /^(дня|вечера)$/.test(input);
+        // },
+        // meridiem : function (hour, minute, isLower) {
+        //     if (hour < 4) {
+        //         return 'ночи';
+        //     } else if (hour < 12) {
+        //         return 'утра';
+        //     } else if (hour < 17) {
+        //         return 'дня';
+        //     } else {
+        //         return 'вечера';
+        //     }
+        // },
         ordinalParse: /\d{1,2}-(й|го|я)/,
         ordinal: function (number, period) {
             switch (period) {
