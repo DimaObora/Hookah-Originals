@@ -48,6 +48,12 @@ $settings =  get_option('hookah_settings');
             url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
             url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
         }
+        @font-face{
+            font-family: 'olietta script lyrica bolditalic';
+            src: local('olietta script lyrica bolditalic'),local('olietta-script-lyrica-bolditalic'),
+            url(<?php echo get_template_directory_uri(); ?>/fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf);
+            font-style: normal;
+        }
     </style>
 
 </head>
@@ -333,12 +339,12 @@ $settings =  get_option('hookah_settings');
             <div class="col-lg-6 copy-right-text">
                 <?php echo $settings['hookah_text_field_7']; ?>
             </div>
-            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a><?php echo $settings['hookah_text_field_1']; ?>
+            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?>&nbsp;&nbsp;&nbsp;&nbsp;</a><?php echo $settings['hookah_text_field_1']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 footer-social">
-                <a href="#"><div class="circlefa"><i class="fa fa-facebook"></i></div></a>
-                <a href="#"><div class="circlefa"><i class="fa fa-twitter"></i></div></a>
-                <a href="#"><div class="circlefa"><i class="fa fa-vk"></i></div></a>
+                <a href="<?php echo $settings['hookah_text_field_8']; ?>" target="_blank"><div class="circlefa"><i class="fa fa-facebook"></i></div></a>
+                <a href="<?php echo $settings['hookah_text_field_9']; ?>" target="_blank"><div class="circlefa"><i class="fa fa-twitter"></i></div></a>
+                <a href="<?php echo $settings['hookah_text_field_10']; ?>" target="_blank"><div class="circlefa"><i class="fa fa-vk"></i></div></a>
             </div>
         </div>
     </div>
