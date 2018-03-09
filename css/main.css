@@ -2424,3 +2424,7 @@ nav a:hover {
 .close:hover{
     background-color: rgba(0, 122, 200, 0.8);
 }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color:#000000 !important;
+}
