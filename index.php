@@ -48,6 +48,12 @@ $settings =  get_option('hookah_settings');
             url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
             url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
         }
+        @font-face{
+            font-family: 'olietta script lyrica bolditalic';
+            src: local('olietta script lyrica bolditalic'),local('olietta-script-lyrica-bolditalic'),
+            url(<?php echo get_template_directory_uri(); ?>/fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf);
+            font-style: normal;
+        }
     </style>
 
 </head>
