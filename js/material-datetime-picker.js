@@ -458,7 +458,7 @@ var DateTimePicker = function (_Events) {
       }, false);
 
       this.$('.js-show-clock').addEventListener('click', function (e) {
-        return _this5.clickShowClock(e);
+        return _this5.showHourClock(e);
       }, false);
 
       this.scrimEl.addEventListener('click', function () {
