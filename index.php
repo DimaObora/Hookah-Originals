@@ -333,7 +333,7 @@ $settings =  get_option('hookah_settings');
             <div class="col-lg-6 copy-right-text">
                 <?php echo $settings['hookah_text_field_7']; ?>
             </div>
-            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a><?php echo $settings['hookah_text_field_1']; ?>
+            <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone " href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/','',$settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?>&nbsp;&nbsp;&nbsp;&nbsp;</a><?php echo $settings['hookah_text_field_1']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 footer-social">
                 <a href="#"><div class="circlefa"><i class="fa fa-facebook"></i></div></a>
