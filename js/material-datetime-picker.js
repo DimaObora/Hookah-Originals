@@ -11,8 +11,6 @@ var popupTemplate = (function () {
   return "\n<div class=\"c-datepicker\">\n  <a class=\"c-datepicker__toggle c-datepicker__toggle--right c-datepicker--show-time js-show-clock\" title=\"show time picker\">\n  </a>\n\n  <a class=\"c-datepicker__toggle c-datepicker__toggle--left c-datepicker--show-calendar is-selected js-show-calendar\" title=\"show date picker\">\n  </a>\n\n  <div class=\"c-datepicker__header\">\n    <div class=\"c-datepicker__header-day\">\n      <span class=\"js-day\">Monday</span>\n    </div>\n    <div class=\"c-datepicker__header-date\">\n      <span class=\"c-datepicker__header-date__month js-date-month\"></span>\n      <span class=\"c-datepicker__header-date__day js-date-day\"></span>\n      <span class=\"c-datepicker__header-date__time js-date-time\">\n        <span class=\"c-datepicker__header-date__hours js-date-hours active\">09</span>:<span class=\"c-datepicker__header-date__minutes js-date-minutes\">00</span>\n      </span>\n    </div>\n  </div>\n\n  <div class=\"c-datepicker__calendar\"></div>\n  <div class=\"c-datepicker__clock\">\n    <div class=\"c-datepicker__clock__am-pm-toggle\">\n      <label class=\"c-datepicker__toggle--checked\">\n        <input checked=\"checked\" class=\"c-datepicker__toggle c-datepicker__toggle--right c-datepicker__clock--am\" type=\"radio\" name=\"time-date-toggle\" value=\"AM\" />\n        AM\n      </label>\n\n      <label>\n        <input class=\"c-datepicker__toggle c-datepicker__toggle--right c-datepicker__clock--pm\" type=\"radio\" name=\"time-date-toggle\" value=\"PM\" />\n        PM\n      </label>\n    </div>\n    <div class=\"c-datepicker__mask\"></div>\n    <div class=\"c-datepicker__clock__hours js-clock-hours active\">\n      <div class=\"c-datepicker__clock__num\" data-number=\"3\">3</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"4\">4</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"5\">5</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"6\">6</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"7\">7</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"8\">8</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"9\">9</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"10\">10</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"11\">11</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"0\">12</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"1\">1</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"2\">2</div>\n      <div class=\"c-datepicker__clock-hands\">\n        <div class=\"c-datepicker__hour-hand\"></div>\n      </div>\n    </div>\n   <div class=\"c-datepicker__clock__hours js-clock-hours-pm\">\n      <div class=\"c-datepicker__clock__num\" data-number=\"3\">15</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"4\">16</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"5\">17</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"6\">18</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"7\">19</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"8\">20</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"9\">21</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"10\">22</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"11\">23</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"0\">0</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"1\">13</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"2\">14</div>\n      <div class=\"c-datepicker__clock-hands\">\n        <div class=\"c-datepicker__hour-hand\"></div>\n      </div>\n    </div>\n <div class=\"c-datepicker__clock__minutes js-clock-minutes\">\n      <div class=\"c-datepicker__clock__num\" data-number=\"15\">15</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"20\">20</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"25\">25</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"30\">30</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"35\">35</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"40\">40</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"45\">45</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"50\">50</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"55\">55</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"0\">0</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"5\">5</div>\n      <div class=\"c-datepicker__clock__num\" data-number=\"10\">10</div>\n      <div class=\"c-datepicker__clock-hands\">\n        <div class=\"c-datepicker__hour-hand\"></div>\n      </div>\n    </div>\n  </div>\n  <div class=\"modal-btns\">\n    <a class=\"c-btn c-btn--flat js-cancel\">Отмена</a>\n    <a class=\"c-btn c-btn--flat js-ok\">ОК</a>\n  </div>\n</div>\n";
 });
 
-var ampm = "am";
-
 var scrimTemplate = (function (_ref) {
   var styles = _ref.styles;
   return "\n<div class=\"" + styles.scrim + "\"></div>\n";
@@ -257,10 +255,11 @@ var defaults$$1 = function defaults$$1() {
     dateValidator: undefined
   };
 };
-var minuteorhours = true;
 
 var DateTimePicker = function (_Events) {
   inherits(DateTimePicker, _Events);
+
+    var minuteorhours = true;
 
   function DateTimePicker() {
     var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -358,7 +357,6 @@ var DateTimePicker = function (_Events) {
     key: '_show',
     value: function _show() {
       var _this3 = this;
-
       this.delegateEvents();
       // add the animation classes on the next animation tick
       // so that they actually work
@@ -443,11 +441,9 @@ var DateTimePicker = function (_Events) {
       });
 
       this.$('.c-datepicker__clock--am').addEventListener('click', function (e) {
-        ampm = "am";
         return _this5.clickAm(e);
       }, false);
       this.$('.c-datepicker__clock--pm').addEventListener('click', function (e) {
-          ampm = "pm";
         return _this5.clickPm(e);
       }, false);
 
@@ -608,10 +604,12 @@ var DateTimePicker = function (_Events) {
     value: function showHourClock() {
          minuteorhours = true;
       this.clickShowClock();
-      if(ampm == "am"){
+      if(this.meridiem == "am"){
           this.$('.js-clock-hours').classList.add('active');
+          this.$('.js-clock-hours-pm').classList.remove('active');
       }else{
           this.$('.js-clock-hours-pm').classList.add('active');
+          this.$('.js-clock-hours').classList.remove('active');
       }
         this.$('.js-clock-minutes').classList.remove('active');
         this.$('.js-date-hours').classList.add('active');
