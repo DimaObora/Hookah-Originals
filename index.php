@@ -69,9 +69,8 @@ $settings =  get_option('hookah_settings');
                     <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
                 </div>
                 <div class="modal-footer">
-
                     <div class="col-md-6 text-center">
-                        <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none';">Да</button>
+                        <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none'; document.cookie = 'check18=ok';">Да</button>
                     </div>
                     <div class="col-md-6 text-center">
                         <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="https://www.google.ru">Нет</a>

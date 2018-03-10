@@ -157,23 +157,33 @@ $(document).ready(function () {
     });
 
     <!-- скрипт чтобы без чек бокса не работала кнопка да-->
+    $('#warning_button_yes').prop('disabled', true);
+    $('#agree').change(function() {
+        $('#warning_button_yes').prop('disabled', function(i, val) {
+            return !val;
+        })
+    });
 
-            $('#warning_button_yes').prop('disabled', true);
-
-            $('#agree').change(function() {
-
-                $('#warning_button_yes').prop('disabled', function(i, val) {
-                    return !val;
-                })
-            });
-
-        <!--скрипт для открытия модалки через 1с-->
-
-    var delay_popup = 1000;setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);
-
+    <!--скрипт для открытия модалки через 1с-->
+    var blockmodal = true;
+    if (navigator.cookieEnabled) {
+        if (getCookie('check18') == 'ok') {
+            blockmodal = false;
+        }
+    }
+    if (blockmodal) {
+        var delay_popup = 1000;
+        setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);
+    }
 
 });
 
+function getCookie(name) {
+    var matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
 
 //локализация выдрана из https://github.com/Ilyaololo/react-material-datetimepicker
 (function (global, factory) {
