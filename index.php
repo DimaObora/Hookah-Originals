@@ -210,21 +210,25 @@ $settings =  get_option('hookah_settings');
 
 <!-- End service Area -->
 <section class=" bg-secondary-1 relative" id="application">
-    <div class="image-absolute image-absolute-left">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">
-    </div>
-    <div class="container-fluid">
-        <div class="row row-md-right">
-            <div class="col-lg-6 col-md-12 col-xs-12 col-xm-12 col-md-pull-1 about-details text-center">
-                <div class="container">
+<!--    <div class="image-absolute image-absolute-left">-->
+<!--        <img src="--><?php //echo get_template_directory_uri(); ?><!--/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">-->
+<!--    </div>-->
+    <div class="container">
+        <div class="row row-md-right about-details">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать кальян!</h2></div>
                     <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
                     <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
                     <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
                     <form id="order-form" action="#" method="post" class="mt-50 mb-25">
-                        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 select">
-                            <h4>Ваше имя:</h4>
-                            <input class="input-kalk-1cal" name="name" type="text" size="20">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
+                            <div class="form-group row">
+                                <label for="inputName" class="col-xl-2 col-form-label"><h4>Ваше имя:</h4></label>
+                                <div class="col-sm-10">
+                                    <input class="input-kalk-1cal" name="name" type="text" size="20">
+                                </div>
+                            </div>
+
+
                             <h4>Ваш телефон:</h4>
                             <input class="input-kalk-1cal" name="phone" id="phone1">
                             <h4>Когда доставить:</h4>
@@ -235,7 +239,7 @@ $settings =  get_option('hookah_settings');
                             <h4>Куда доставить:</h4>
                             <textarea rows="3" cols="35"  name="address" class="delivery-address"></textarea>
                         </div>
-                        <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 select">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
                             <h4>Что налить в колбу:</h4>
                             <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
                                     multiple="multiple">
@@ -283,8 +287,7 @@ $settings =  get_option('hookah_settings');
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
