@@ -251,7 +251,7 @@ $settings = get_option('hookah_settings');
 
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="count" type="text" id="count" value="1" onchange="calc()" placeholder="Кол-во кальянов:"/>
+                                <input class="input-kalk-1cal" name="count" type="number" id="count" value="1" onchange="calc()" placeholder="Кол-во кальянов:"/>
                             </div>
                         </div>
 
@@ -421,6 +421,7 @@ $settings = get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.js"></script>
 </body>
 </html>
 
