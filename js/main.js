@@ -140,8 +140,14 @@ $(document).ready(function () {
     });
 
     $(document).ready(function () {
-        $(".formcolback-select").select2();
+        $("#flask").select2({
+            placeholder: "Что налить в колбу"
+        });
+        $("#tobacco").select2({
+            placeholder: "Выберите табак:"
+        });
         $ ( ' .parallax-window ' ). parallax ({imageSrc :  '../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg' });
+
     });
 
     var input = document.querySelectorAll('.c-datepicker-input');
