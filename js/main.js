@@ -140,6 +140,9 @@ $(document).ready(function () {
     });
 
     $(document).ready(function () {
+        $(function(){
+            $("#phone1").mask("+7 (999) 99-99-999");
+        });
         $("#flask").select2({
             placeholder: "Что налить в колбу"
         });
