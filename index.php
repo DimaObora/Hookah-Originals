@@ -397,17 +397,17 @@ $settings = get_option('hookah_settings');
         crossorigin="anonymous"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sticky.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-min.sticky.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/calc-form.js"></script>
-<script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/calc-form-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/polyfill-min.js">></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker.js" charset="utf-8"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker-min.js" charset="utf-8"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-min.js"></script>
 </body>
 </html>
 
