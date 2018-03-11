@@ -42,8 +42,6 @@
     }
     .member-area .next-trigger {
         right: 0;
-        left: 60%;
-        top: 100%;
         transform: translateY(0%);
     }
     .summery {
@@ -117,6 +115,14 @@
         top: 100%;
         transform: translateY(0%);
     }
+
+    .member-area .next-trigger {
+        right: 0;
+        left: 60%;
+        top: 100%;
+        transform: translateY(0%);
+    }
+
     .banner-content p br {
         display: none;
     }
