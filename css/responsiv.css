@@ -240,7 +240,7 @@
         display: none;
     }
     .member-area {
-        background-position: -43px 93px;
+        background-position: -43px 0px;
         background-size: 279%;
     }
 
@@ -251,6 +251,10 @@
         position: inherit;
         width: 100%;
         left: 0;
+    }
+
+    .select{
+        margin-bottom: 0;
     }
 }
 @media (max-width: 414px) {
