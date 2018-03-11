@@ -2171,14 +2171,14 @@ nav a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -40px;
+    left: 2%;
 }
 
 .member-area .next-trigger {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -40px;
+    right: 2%;
 }
 
 .details {

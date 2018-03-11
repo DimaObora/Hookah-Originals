@@ -27,13 +27,13 @@
 
 @media (max-width: 1199px) {
     .member-area .prev-trigger {
-        left: 0;
+        left: 2%;
     }
     .quote-left h2 {
         font-size: 28px;
     }
     .member-area .next-trigger {
-        right: 0;
+        right: 2%;
         transform: translateY(0%);
     }
     .summery {
