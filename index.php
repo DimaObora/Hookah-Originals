@@ -19,43 +19,7 @@ $settings = get_option('hookah_settings');
     <!-- Site Title -->
     <title>Hookah Originals</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
-    <style>
-        @font-face {
-            font-family: 'DynarShadow Bold';
-            font-style: normal;
-            font-weight: 700;
-            src: local('DynarShadow Bold'), local('DynarShadow-Bold'),
-            url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
-            url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'olietta script lyrica bolditalic';
-            src: local('olietta script lyrica bolditalic'), local('olietta-script-lyrica-bolditalic'),
-            url(<?php echo get_template_directory_uri(); ?>/fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf);
-            font-style: normal;
-        }
-    </style>
 
 </head>
 <body>
@@ -404,7 +368,43 @@ $settings = get_option('hookah_settings');
 </footer>
 
 <!-- End Footer Area -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+<style>
+    @font-face {
+        font-family: 'DynarShadow Bold';
+        font-style: normal;
+        font-weight: 700;
+        src: local('DynarShadow Bold'), local('DynarShadow-Bold'),
+        url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
+        url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'olietta script lyrica bolditalic';
+        src: local('olietta script lyrica bolditalic'), local('olietta-script-lyrica-bolditalic'),
+        url(<?php echo get_template_directory_uri(); ?>/fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf);
+        font-style: normal;
+    }
+</style>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
