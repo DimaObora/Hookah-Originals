@@ -9,7 +9,7 @@ $settings = get_option('hookah_settings');
     <!-- Favicon-->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/fav.png">
     <!-- Author Meta -->
-    <meta name="author" content="Colorlib">
+    <meta name="author" content="">
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
@@ -19,64 +19,30 @@ $settings = get_option('hookah_settings');
     <!-- Site Title -->
     <title>Hookah Originals</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
-    <style>
-        @font-face {
-            font-family: 'DynarShadow Bold';
-            font-style: normal;
-            font-weight: 700;
-            src: local('DynarShadow Bold'), local('DynarShadow-Bold'),
-            url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
-            url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'olietta script lyrica bolditalic';
-            src: local('olietta script lyrica bolditalic'), local('olietta-script-lyrica-bolditalic'),
-            url(<?php echo get_template_directory_uri(); ?>/fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf);
-            font-style: normal;
-        }
-    </style>
-
 </head>
+
 <body>
 <div id="parent_popup">
-
-        <div class="modal-dialog block18+ col-xl-4" id="popup">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Вам уже исполнилось 18 лет?</h4>
+    <div class="modal-dialog block18+ col-xl-4" id="popup">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Вам уже исполнилось 18 лет?</h4>
+            </div>
+            <div class="modal-body text-center">
+                Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия! <br>
+                <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-6 text-center">
+                    <button type="button" class="btn btn-block btn-success " id="warning_button_yes"
+                            data-dismiss="modal"
+                            onclick="document.getElementById('parent_popup').style.display='none'; document.cookie = 'check18=ok';">
+                        Да
+                    </button>
                 </div>
-                <div class="modal-body text-center">
-                    Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия! <br>
-                    <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
-                </div>
-                <div class="modal-footer">
-                    <div class="col-md-6 text-center">
-                        <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none'; document.cookie = 'check18=ok';">Да</button>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="https://www.google.ru">Нет</a>
-                    </div>
+                <div class="col-md-6 text-center">
+                    <a type="button" class="btn btn-block btn-danger" id="warning_button_no"
+                       href="https://www.google.ru">Нет</a>
                 </div>
             </div>
         </div>
@@ -118,7 +84,6 @@ $settings = get_option('hookah_settings');
             </div>
         </header>
         <!-- End Header Area -->
-
         <div class="row fullscreen align-items-center justify-content-center" style="height: 735px;">
             <div class="col-lg-12">
                 <div class="banner-content text-center">
@@ -134,14 +99,12 @@ $settings = get_option('hookah_settings');
 </section>
 <!-- End Banner Area -->
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
-
 </div>
 
 <!-- Start quote Area -->
 <section class="quote-area pt-100 pb-100" id="feature">
     <div class="container">
         <div class="row">
-
             <div class="col-lg-6 col-sm-12 quote-left">
                 <h2 class="text-right">
                     <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br> тех,<span> кто</span> редко <br>
@@ -214,13 +177,8 @@ $settings = get_option('hookah_settings');
 
 <!-- End service Area -->
 <section class=" bg-secondary-1 relative" id="application">
-    <!--    <div class="image-absolute image-absolute-left">-->
-    <!--        <img src="-->
-    <?php //echo get_template_directory_uri(); ?><!--/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">-->
-    <!--    </div>-->
     <div class="container">
         <div class="row row-md-right about-details">
-
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
@@ -231,53 +189,50 @@ $settings = get_option('hookah_settings');
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="name" type="text" size="20" placeholder="Ваше имя:">
+                                <input required class="input-kalk-1cal" name="name" type="text" size="20"
+                                       placeholder="Ваше имя:">
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="phone" id="phone1" placeholder="Ваш телефон:">
+                                <input required class="input-kalk-1cal" name="phone" id="phone1"
+                                       placeholder="Ваш телефон:">
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal c-datepicker-input" name="datefrom" placeholder="Когда доставить:">
+                                <input required class="input-kalk-1cal c-datepicker-input" name="datefrom"
+                                       placeholder="Когда доставить:">
                             </div>
                         </div>
-
-                                <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
-
+                        <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="count" type="number" id="count" value="1" onchange="calc()" placeholder="Кол-во кальянов:"/>
+                                <input required class="input-kalk-1cal" name="count" type="number" id="count" value="1"
+                                       onchange="calc()" placeholder="Кол-во кальянов:"/>
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <textarea rows="3" cols="35" name="address" class="delivery-address" placeholder="Куда доставить:"></textarea>
+                                <textarea required rows="3" cols="35" name="address" class="delivery-address"
+                                          placeholder="Куда доставить:"></textarea>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
-
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
-                                        multiple="multi"  >
-                                    <option value="" disabled selected>Что налить в колбу:</option>
+                                        multiple="multi">
                                     <?php
                                     $args = array('posts_per_page' => -1, 'post_type' => 'flask');
                                     $myposts = get_posts($args);
                                     foreach ($myposts as $post) {
                                         setup_postdata($post);
                                         ?>
-
                                         <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
+                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?>
+                                            руб.
                                         </option>
                                         <?php
                                     }
@@ -286,7 +241,6 @@ $settings = get_option('hookah_settings');
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
@@ -298,7 +252,8 @@ $settings = get_option('hookah_settings');
                                         setup_postdata($post);
                                         ?>
                                         <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
+                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?>
+                                            руб.
                                         </option>
                                         <?php
                                     }
@@ -307,28 +262,23 @@ $settings = get_option('hookah_settings');
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal c-datepicker-input" name="dateto" placeholder="Когда забрать:"/>
+                                <input required class="input-kalk-1cal c-datepicker-input" name="dateto"
+                                       placeholder="Когда забрать:"/>
                             </div>
                         </div>
-
                         <input class="input-kalk-1cal" type="hidden" id="datetohiden" value="0"/>
-
                         <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0">
                         <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
-
-                            <button id="sends"
-                                    class="pull-left primary-btn  align-items-center mt-30"
-                                    style="color: white">
-                                Заказать
-                            </button>
-
+                        <button id="sends"
+                                class="pull-left primary-btn  align-items-center mt-30"
+                                style="color: white">
+                            Заказать
+                        </button>
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
 </section>
@@ -404,7 +354,43 @@ $settings = get_option('hookah_settings');
 </footer>
 
 <!-- End Footer Area -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+<style>
+    @font-face {
+        font-family: 'DynarShadow Bold';
+        font-style: normal;
+        font-weight: 700;
+        src: local('DynarShadow Bold'), local('DynarShadow-Bold'),
+        url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
+        url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'olietta script lyrica bolditalic';
+        src: local('olietta script lyrica bolditalic'), local('olietta-script-lyrica-bolditalic'),
+        url(<?php echo get_template_directory_uri(); ?>/fonts/olietta-script-lyrica-bolditalic_[allfont.ru].ttf);
+        font-style: normal;
+    }
+</style>
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"

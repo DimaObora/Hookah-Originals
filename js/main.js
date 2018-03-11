@@ -35,6 +35,10 @@ $(document).ready(function () {
         menuopen = !menuopen;
     });
 
+    if(window_width < 991){
+        $(".menu-bar").click();
+    }
+
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -102,12 +106,11 @@ $(document).ready(function () {
     $(document).ready(function () {
         var form = $('#order-form'); // contact form
         var submit = $('#sends'); // submit button
-        var alert = $('#responsesend'); // alert div for show alert message
+        var alertDiv = $('#responsesend'); // alert div for show alert message
         //кнопка скрытия модалки
         $("#responseclose").on("click", function () {
-            alert.fadeOut();
+            alertDiv.fadeOut();
         });
-        // alert.fadeOut;
 
         // убираем отправку формы
         form.submit(function () {
@@ -117,25 +120,27 @@ $(document).ready(function () {
         // button click event
         submit.on('click', function (e) {
             // prevent default form submit
-
-            $.ajax({
-                url: $('#order-send-url').val(), // form action url
-                type: 'POST', // form submit method get/post
-                dataType: 'html', // request type html/json/xml
-                data: form.serialize(), // serialize form data
-                beforeSend: function () {
-                    submit.html('Отправка....'); // change submit button text
-                },
-                success: function (data) {
-                    alert.fadeIn(); // fade in response data
-                    // form.trigger('reset'); // reset form
-                    submit.html('Отправленно'); // change submit button text
-                    submit.prop("disabled", true);
-                },
-                error: function (e) {
-                    console.log(e)
-                }
-            });
+            if(document.getElementById('order-form').checkValidity()) {
+                $.ajax({
+                    url: $('#order-send-url').val(), // form action url
+                    type: 'POST', // form submit method get/post
+                    dataType: 'html', // request type html/json/xml
+                    data: form.serialize(), // serialize form data
+                    beforeSend: function () {
+                        submit.html('Отправка....'); // change submit button text
+                    },
+                    success: function (data) {
+                        alert.fadeIn(); // fade in response data
+                        // form.trigger('reset'); // reset form
+                        submit.html('Отправленно'); // change submit button text
+                        submit.prop("disabled", true);
+                    },
+                    error: function (e) {
+                        submit.html('Отправить');
+                        alert("Ошибка. Не удалось отправить!");
+                    }
+                });
+            }
         });
     });
 
