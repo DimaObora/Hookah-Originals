@@ -22,17 +22,9 @@
     .image-absolute-left img {
         transform: translateX(-27%);
     }
-    .member-area {
-        background-position: 0px 0px;
-        background-size: cover;
-    }
 
 }
-@media (width: 1280px){
-    .member-area {
-        background-position: 0px 300px!important;
-    }
-}
+
 @media (max-width: 1199px) {
     .member-area .prev-trigger {
         left: 0;
@@ -139,10 +131,6 @@
         padding-right: 15px;
 
     }
-    .member-area {
-        background-position: -48px 0px;
-        background-size: 236%;
-    }
     .pb-100 {
         padding-bottom: 50px;
     }
@@ -238,10 +226,6 @@
     }
     .img-responsive{
         display: none;
-    }
-    .member-area {
-        background-position: -43px 0px;
-        background-size: 279%;
     }
 
 }
