@@ -2434,3 +2434,6 @@ nav a:hover {
 #application{
     background-image: url("../img/brands_bg_test.jpg");
 }
+#order-form{
+    padding-right: 15px;
+}
