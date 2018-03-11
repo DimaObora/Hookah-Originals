@@ -9,7 +9,7 @@ $settings = get_option('hookah_settings');
     <!-- Favicon-->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/fav.png">
     <!-- Author Meta -->
-    <meta name="author" content="Colorlib">
+    <meta name="author" content="">
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
@@ -36,7 +36,6 @@ $settings = get_option('hookah_settings');
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
     <style>
@@ -48,7 +47,6 @@ $settings = get_option('hookah_settings');
             url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.woff) format('woff'),
             url(<?php echo get_template_directory_uri(); ?>/fonts/dynarshadow-bold_d58c133493577c19b19dfd68b41e68b3.ttf) format('truetype');
         }
-
         @font-face {
             font-family: 'olietta script lyrica bolditalic';
             src: local('olietta script lyrica bolditalic'), local('olietta-script-lyrica-bolditalic'),
@@ -56,27 +54,30 @@ $settings = get_option('hookah_settings');
             font-style: normal;
         }
     </style>
-
 </head>
+
 <body>
 <div id="parent_popup">
-
-        <div class="modal-dialog block18+ col-xl-4" id="popup">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Вам уже исполнилось 18 лет?</h4>
+    <div class="modal-dialog block18+ col-xl-4" id="popup">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Вам уже исполнилось 18 лет?</h4>
+            </div>
+            <div class="modal-body text-center">
+                Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия! <br>
+                <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-6 text-center">
+                    <button type="button" class="btn btn-block btn-success " id="warning_button_yes"
+                            data-dismiss="modal"
+                            onclick="document.getElementById('parent_popup').style.display='none'; document.cookie = 'check18=ok';">
+                        Да
+                    </button>
                 </div>
-                <div class="modal-body text-center">
-                    Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия! <br>
-                    <label><input type="checkbox" id="agree"/> Согласен на обработку персональных данных</label>
-                </div>
-                <div class="modal-footer">
-                    <div class="col-md-6 text-center">
-                        <button type="button" class="btn btn-block btn-success " id="warning_button_yes"  data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none'; document.cookie = 'check18=ok';">Да</button>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <a type="button" class="btn btn-block btn-danger" id="warning_button_no" href="https://www.google.ru">Нет</a>
-                    </div>
+                <div class="col-md-6 text-center">
+                    <a type="button" class="btn btn-block btn-danger" id="warning_button_no"
+                       href="https://www.google.ru">Нет</a>
                 </div>
             </div>
         </div>
@@ -118,7 +119,6 @@ $settings = get_option('hookah_settings');
             </div>
         </header>
         <!-- End Header Area -->
-
         <div class="row fullscreen align-items-center justify-content-center" style="height: 735px;">
             <div class="col-lg-12">
                 <div class="banner-content text-center">
@@ -134,14 +134,12 @@ $settings = get_option('hookah_settings');
 </section>
 <!-- End Banner Area -->
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
-
 </div>
 
 <!-- Start quote Area -->
 <section class="quote-area pt-100 pb-100" id="feature">
     <div class="container">
         <div class="row">
-
             <div class="col-lg-6 col-sm-12 quote-left">
                 <h2 class="text-right">
                     <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br> тех,<span> кто</span> редко <br>

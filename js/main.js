@@ -35,6 +35,10 @@ $(document).ready(function () {
         menuopen = !menuopen;
     });
 
+    if(window_width < 991){
+        $(".menu-bar").click();
+    }
+
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
