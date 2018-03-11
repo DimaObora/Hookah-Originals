@@ -46,12 +46,12 @@ select > option {
 }
 
 .mb-1em {
-    margin-bottom: 6em;
+    margin-bottom: 2em;
     padding: 0.7em 2em;
     background: #efefef;
     border-bottom: 3px solid red;
     margin-right: 0em;
-    margin-top: 1.9em;
+    margin-top: 1.7em;
     width: 100%;
     text-align: center;
     height: 42px;
@@ -131,19 +131,6 @@ pre {
     color: #000;
 }
 
-@media (min-width: 991px) {
-    .row {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -ms-flex: 0 1 auto;
-        -webkit-flex: 0 1 auto;
-        flex: 0 1 auto;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-}
 
 .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
     display: block !important;
@@ -192,6 +179,14 @@ pre {
     margin-top: 2em;
 }
 .select .select2-selection, .select textarea, .select .input-kalk-1cal {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+#order-form{
+    width: 100%;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

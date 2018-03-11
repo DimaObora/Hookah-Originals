@@ -28,6 +28,7 @@ function calc() {
     dateto = dateto == null ? 0 : dateto.value;
     //количесто дней аренды
     var countDay = (dateto - datefrom) / 60 / 60 / 24 ;
+    countDay = countDay |0;
     countDay = (countDay < 0 ? 0 : countDay);
 
     var price = 0;
@@ -39,6 +40,7 @@ function calc() {
     }
     price += parseInt(count.value) * priceOne;
     price += parseInt(count.value) * countDay * priceDay;
+    price = price | 0;
     result.innerHTML = price;
     resultInput.value = price;
 }

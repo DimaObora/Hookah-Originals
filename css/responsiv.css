@@ -22,28 +22,18 @@
     .image-absolute-left img {
         transform: translateX(-27%);
     }
-    .member-area {
-        background-position: 0px 412px;
-
-    }
 
 }
-@media (width: 1280px){
-    .member-area {
-        background-position: 0px 300px!important;
-    }
-}
+
 @media (max-width: 1199px) {
     .member-area .prev-trigger {
-        left: 0;
+        left: 2%;
     }
     .quote-left h2 {
         font-size: 28px;
     }
     .member-area .next-trigger {
-        right: 0;
-        left: 60%;
-        top: 100%;
+        right: 2%;
         transform: translateY(0%);
     }
     .summery {
@@ -117,6 +107,14 @@
         top: 100%;
         transform: translateY(0%);
     }
+
+    .member-area .next-trigger {
+        right: 0;
+        left: 60%;
+        top: 100%;
+        transform: translateY(0%);
+    }
+
     .banner-content p br {
         display: none;
     }
@@ -130,11 +128,6 @@
         text-align: center;
         margin-left: 0em;
         padding-bottom: 2.5em;
-
-    }
-    .member-area {
-        background-position: -48px 0px;
-        background-size: 236%;
     }
     .pb-100 {
         padding-bottom: 50px;
@@ -232,11 +225,19 @@
     .img-responsive{
         display: none;
     }
-    .member-area {
-        background-position: -43px 93px;
-        background-size: 279%;
+
+}
+@media (max-width: 575px) {
+    .primary-btn{
+        display: block;
+        position: inherit;
+        width: 100%;
+        left: 0;
     }
 
+    .select{
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 414px) {
     .quote-left h2 {

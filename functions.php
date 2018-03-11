@@ -84,6 +84,27 @@ function hookah_settings_init(  ) {
         'pluginPage',
         'hookah_pluginPage_section'
     );
+    add_settings_field(
+        'hookah_text_field_8',
+        __( 'Ссылка фэйсбук', 'wordpress' ),
+        'hookah_text_field_8_render',
+        'pluginPage',
+        'hookah_pluginPage_section'
+    );
+    add_settings_field(
+        'hookah_text_field_9',
+        __( 'Ссылка твитер', 'wordpress' ),
+        'hookah_text_field_9_render',
+        'pluginPage',
+        'hookah_pluginPage_section'
+    );
+    add_settings_field(
+        'hookah_text_field_10',
+        __( 'Ссылка ВК', 'wordpress' ),
+        'hookah_text_field_10_render',
+        'pluginPage',
+        'hookah_pluginPage_section'
+    );
 }
 
 function hookah_text_field_0_render(  ) {
@@ -139,6 +160,27 @@ function hookah_text_field_7_render(  ) {
     $options = get_option( 'hookah_settings' );
     ?>
     <input type='text' name='hookah_settings[hookah_text_field_7]' value='<?php echo $options['hookah_text_field_7']; ?>'>
+    <?php
+}
+
+function hookah_text_field_8_render(  ) {
+    $options = get_option( 'hookah_settings' );
+    ?>
+    <input type='text' name='hookah_settings[hookah_text_field_8]' value='<?php echo $options['hookah_text_field_8']; ?>'>
+    <?php
+}
+
+function hookah_text_field_9_render(  ) {
+    $options = get_option( 'hookah_settings' );
+    ?>
+    <input type='text' name='hookah_settings[hookah_text_field_8]' value='<?php echo $options['hookah_text_field_9']; ?>'>
+    <?php
+}
+
+function hookah_text_field_10_render(  ) {
+    $options = get_option( 'hookah_settings' );
+    ?>
+    <input type='text' name='hookah_settings[hookah_text_field_10]' value='<?php echo $options['hookah_text_field_10']; ?>'>
     <?php
 }
 
