@@ -214,13 +214,8 @@ $settings = get_option('hookah_settings');
 
 <!-- End service Area -->
 <section class=" bg-secondary-1 relative" id="application">
-    <!--    <div class="image-absolute image-absolute-left">-->
-    <!--        <img src="-->
-    <?php //echo get_template_directory_uri(); ?><!--/img/model-legs-water-pipe-relax.jpg" width="974" height="587" alt="" class="img-responsive">-->
-    <!--    </div>-->
     <div class="container">
         <div class="row row-md-right about-details">
-
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
@@ -231,53 +226,50 @@ $settings = get_option('hookah_settings');
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="name" type="text" size="20" placeholder="Ваше имя:">
+                                <input required class="input-kalk-1cal" name="name" type="text" size="20"
+                                       placeholder="Ваше имя:">
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="phone" id="phone1" placeholder="Ваш телефон:">
+                                <input required class="input-kalk-1cal" name="phone" id="phone1"
+                                       placeholder="Ваш телефон:">
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal c-datepicker-input" name="datefrom" placeholder="Когда доставить:">
+                                <input required class="input-kalk-1cal c-datepicker-input" name="datefrom"
+                                       placeholder="Когда доставить:">
                             </div>
                         </div>
-
-                                <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
-
+                        <input class="input-kalk-1cal" type="hidden" id="datefromhiden" value="0"/>
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal" name="count" type="number" id="count" value="1" onchange="calc()" placeholder="Кол-во кальянов:"/>
+                                <input required class="input-kalk-1cal" name="count" type="number" id="count" value="1"
+                                       onchange="calc()" placeholder="Кол-во кальянов:"/>
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <textarea rows="3" cols="35" name="address" class="delivery-address" placeholder="Куда доставить:"></textarea>
+                                <textarea required rows="3" cols="35" name="address" class="delivery-address"
+                                          placeholder="Куда доставить:"></textarea>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
-
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
-                                        multiple="multi"  >
-                                    <option value="" disabled selected>Что налить в колбу:</option>
+                                        multiple="multi">
                                     <?php
                                     $args = array('posts_per_page' => -1, 'post_type' => 'flask');
                                     $myposts = get_posts($args);
                                     foreach ($myposts as $post) {
                                         setup_postdata($post);
                                         ?>
-
                                         <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
+                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?>
+                                            руб.
                                         </option>
                                         <?php
                                     }
@@ -286,7 +278,6 @@ $settings = get_option('hookah_settings');
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="tobacco" class="formcolback-select" onchange="calc()" id="tobacco"
@@ -298,7 +289,8 @@ $settings = get_option('hookah_settings');
                                         setup_postdata($post);
                                         ?>
                                         <option value="<?php the_title(); ?>:<?php echo get_post_meta($post->ID, "price", true); ?>">
-                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?> руб.
+                                            <?php the_title(); ?> <?php echo get_post_meta($post->ID, "price", true); ?>
+                                            руб.
                                         </option>
                                         <?php
                                     }
@@ -307,28 +299,23 @@ $settings = get_option('hookah_settings');
                                 </select>
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <input class="input-kalk-1cal c-datepicker-input" name="dateto" placeholder="Когда забрать:"/>
+                                <input required class="input-kalk-1cal c-datepicker-input" name="dateto"
+                                       placeholder="Когда забрать:"/>
                             </div>
                         </div>
-
                         <input class="input-kalk-1cal" type="hidden" id="datetohiden" value="0"/>
-
                         <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0">
                         <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
-
-                            <button id="sends"
-                                    class="pull-left primary-btn  align-items-center mt-30"
-                                    style="color: white">
-                                Заказать
-                            </button>
-
+                        <button id="sends"
+                                class="pull-left primary-btn  align-items-center mt-30"
+                                style="color: white">
+                            Заказать
+                        </button>
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
 </section>
