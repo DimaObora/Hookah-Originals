@@ -130,7 +130,7 @@ $(document).ready(function () {
                         submit.html('Отправка....'); // change submit button text
                     },
                     success: function (data) {
-                        alert.fadeIn(); // fade in response data
+                        alertDiv.fadeIn(); // fade in response data
                         // form.trigger('reset'); // reset form
                         submit.html('Отправленно'); // change submit button text
                         submit.prop("disabled", true);
