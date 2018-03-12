@@ -2426,3 +2426,9 @@ body {
 .navbar-brand {
     margin-right: auto;
     }
+.c-datepicker--open {
+    top: 56% !important;
+}
+.c-datepicker {
+    min-height: 532px!important;
+}
