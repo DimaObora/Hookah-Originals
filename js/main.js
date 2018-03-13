@@ -1,44 +1,6 @@
 $(document).ready(function () {
     "use strict";
 
-    var window_width = $(window).width(),
-        window_height = window.innerHeight,
-        header_height = $(".default-header").height(),
-        header_height_static = $(".site-header.static").outerHeight(),
-        fitscreen = window_height - header_height,
-        stickymenu = false,
-        menuopen = false;
-
-    $(".fullscreen").css("height", window_height);
-    $(".fitscreen").css("height", fitscreen);
-
-    //-------- Active Sticky Js ----------//
-    $(".default-header").sticky({topSpacing: 0});
-
-    //отображение фона меню по кнопке
-    $(window).scroll(function(){
-        if ( $(window).scrollTop() > header_height ){
-            stickymenu = true;
-        } else {
-            stickymenu = false;
-            if(menuopen)$(".sticky-wrapper").removeClass("is-sticky");
-        }
-    });
-
-    // -------   Active Mobile Menu-----//
-    $(".menu-bar").on('click', function (e) {
-        e.preventDefault();
-        $("nav").toggleClass('hide');
-        $("span", this).toggleClass("lnr-menu lnr-cross");
-        $(".main-menu").addClass('mobile-menu');
-        if(stickymenu)$(".sticky-wrapper").toggleClass("is-sticky");
-        menuopen = !menuopen;
-    });
-
-    if(window_width < 991){
-        $(".menu-bar").click();
-    }
-
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -154,7 +116,7 @@ $(document).ready(function () {
         $("#tobacco").select2({
             placeholder: "Выберите табак:"
         });
-        $ ( ' .parallax-window ' ). parallax ({imageSrc :  '../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg' });
+        $ ( ' .parallax-window ' ). parallax ();
 
     });
 

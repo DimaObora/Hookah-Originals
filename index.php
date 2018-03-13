@@ -7,7 +7,7 @@ $settings = get_option('hookah_settings');
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/fav.png">
+<!--    <link rel="shortcut icon" href="--><?php //echo get_template_directory_uri(); ?><!--/img/fav.png">-->
     <!-- Author Meta -->
     <meta name="author" content="">
     <!-- Meta Description -->
@@ -330,8 +330,7 @@ $settings = get_option('hookah_settings');
     </div>
 </section>
 <!-- Start member Area -->
-<section class="member-area relative pt-100 pb-100 parallax-window " data-parallax=" scroll "
-         data-image-src="../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg" id="about">
+<section class="member-area relative pt-100 pb-100 parallax-window " data-parallax=" scroll " id="about">
     <div class="overlay overlay-bg"></div>
     <div class="container relative">
         <div class="row justify-content-center ">
@@ -401,15 +400,14 @@ $settings = get_option('hookah_settings');
 </footer>
 
 <!-- End Footer Area -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
-<!--<link rel="stylesheet" href="--><?php //echo get_template_directory_uri(); ?><!--/css/bootstrap.css">-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
 <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -420,7 +418,8 @@ $settings = get_option('hookah_settings');
       rel="stylesheet">
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
 <style>
     @font-face {
         font-family: 'DynarShadow Bold';
@@ -445,9 +444,7 @@ $settings = get_option('hookah_settings');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         crossorigin="anonymous"></script>
-<!--<script src="--><?php //echo get_template_directory_uri(); ?><!--/js/vendor/bootstrap.min.js"></script>-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-min.sticky.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form-min.js"></script>
