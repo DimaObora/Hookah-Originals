@@ -1,192 +1,177 @@
+.input-kalk-1cal,.select {
+    width: 100%;
+    position: relative
+}
+
 .select {
-    position: relative;
     background-position: 95% 50%;
     border-radius: 5px;
     margin-bottom: 20px;
-    display: inline-block;
-    width: 100%;
     vertical-align: top;
+    display: inline-block
 }
 
-select > option {
+select>option {
     background-color: transparent;
     border: 0;
-
     padding-right: 15px;
     height: 31px;
     width: 220px
 }
 
-.select b, .select-2 b {
+.select b,.select-2 b {
     font-weight: 700;
-    margin-bottom: 0;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 2px;
-
-    font-family: Roboto-Regular, sans-serif;
-    margin-bottom: 1em;
+    font-family: Roboto-Regular,sans-serif;
+    margin-bottom: 1em
 }
 
 .input-kalk-1cal {
     font-size: 14px;
     padding: 10px 40px 10px 12px;
-    border: none;
+    border: 0;
     color: #5d5d5d;
     background-color: #efefef;
     display: block;
     line-height: 22px;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
-    position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
-    margin-top: 1em;
+    margin-top: 1em
 }
 
 .mb-1em {
     margin-bottom: 2em;
-    padding: 0.7em 2em;
+    padding: .7em 2em;
     background: #efefef;
     border-bottom: 3px solid red;
-    margin-right: 0em;
+    margin-right: 0;
     margin-top: 1.7em;
     width: 100%;
     text-align: center;
-    height: 42px;
+    height: 42px
 }
 
 .formcolback-select {
-    width: 100% !important;
+    width: 100%!important
 }
 
 .select2-container .select2-selection--multiple {
-    min-height: 42px !important;
-    border-radius: 0 !important;
+    min-height: 42px!important;
+    border-radius: 0!important
 }
 
 .datatimepicer {
     margin-bottom: 2.5em;
-    padding: 0.7em 1.7em;
+    padding: .7em 1.7em;
     background: #efefef;
-    margin-right: 0em;
+    margin-right: 0;
     margin-top: 1.6em;
-    min-width: 276px !important;
-    min-height: 42px !important;
+    min-width: 276px!important;
+    min-height: 42px!important
 }
 
 pre {
-    margin-bottom: 0rem !important;
+    margin-bottom: 0!important
 }
 
-.photo-near-calculator {
-    overflow: hidden;
-}
-
-.photos-of-the-full-width {
-    max-width: 122% !important;
-%;
-}
-
-.image-absolute {
-    overflow: hidden;
+.image-absolute,.photo-near-calculator {
+    overflow: hidden
 }
 
 .row-md-right {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: flex-end
 }
 
-.bg-secondary, .bg-secondary-1 {
+.bg-secondary {
     background-color: #312944;
-    color: #fff;
-}
-
-.bg-secondary a:hover, .bg-secondary-1 a:hover {
-    color: #ae2f3d;
-}
-
-.bg-secondary .btn-default, .bg-secondary-1 .btn-default {
-    color: #fff;
-    border-color: #fff;
-    background-color: transparent;
-}
-
-.bg-secondary .btn-default:hover, .bg-secondary-1 .btn-default:hover {
-    color: #312944;
-    background-color: #fff;
-}
-
-.bg-secondary .btn-primary:hover, .bg-secondary-1 .btn-primary:hover {
-    color: #fff;
+    color: #fff
 }
 
 .bg-secondary-1 {
-    background-color: #000;
+    color: #fff;
+    background-color: #000
+}
+
+.bg-secondary a:hover,.bg-secondary-1 a:hover {
+    color: #ae2f3d
+}
+
+.bg-secondary .btn-default,.bg-secondary-1 .btn-default {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent
+}
+
+.bg-secondary .btn-default:hover {
+    color: #312944;
+    background-color: #fff
 }
 
 .bg-secondary-1 .btn-default:hover {
-    color: #000;
+    background-color: #fff
 }
 
-
-.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
-    display: block !important;
-    content: " ";
+#responsesend h1,.bg-secondary .btn-primary:hover,.bg-secondary-1 .btn-primary:hover {
+    color: #fff
 }
 
-*, *:before, *:after {
-    box-sizing: border-box !important;
+.bg-secondary-1 .btn-default:hover {
+    color: #000
 }
 
-/*.c-btn{*/
-/*min-width: 341px !important;*/
-/*}*/
-.delivery-address {
-    width: 100% !important;
+.btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before {
+    display: block!important;
+    content: " "
 }
 
-.select2 {
-    width: 100% !important;
+*,:after,:before {
+    box-sizing: border-box!important
+}
+
+.delivery-address,.select2 {
+    width: 100%!important
 }
 
 .photos-of-the-full-width {
-    max-width: 122% !important;
+    max-width: 122%!important
 }
 
 #responsesend {
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial,Helvetica,sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     padding-top: 10%;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0,0,0,.9);
     z-index: 99999;
     display: none;
     text-align: center;
-    vertical-align: middle;
-}
-
-#responsesend h1 {
-    color: white;
+    vertical-align: middle
 }
 
 .title-hookah {
-    margin-top: 2em;
+    margin-top: 2em
 }
-.select .select2-selection, .select textarea, .select .input-kalk-1cal {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+
+.select .input-kalk-1cal,.select .select2-selection,.select textarea {
+    margin-top: .5em;
+    margin-bottom: .5em
 }
-#order-form{
-    width: 100%;
+
+#order-form {
+    width: 100%
 }
+
 .center-block {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }

@@ -7,7 +7,7 @@ $settings = get_option('hookah_settings');
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/fav.png">
+<!--    <link rel="shortcut icon" href="--><?php //echo get_template_directory_uri(); ?><!--/img/fav.png">-->
     <!-- Author Meta -->
     <meta name="author" content="">
     <!-- Meta Description -->
@@ -18,7 +18,44 @@ $settings = get_option('hookah_settings');
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Hookah Originals</title>
+    <style>
 
+        .nav-item{
+            padding: 0 12px;
+            text-align: center;
+        }
+        /*.navbar-nav{*/
+        /*flex-direction: row;*/
+        /*}*/
+        .navbar-toggleable-md{
+            position: relative;
+        }
+        .line-item{
+            text-align: center;
+        }
+        .nav-item{
+
+            display: inline-block;
+        }
+        .navbar-nav .nav-item{
+            float: none!important;
+        }
+        .button-menu-right{
+            float: right;
+        }
+        .logo-absol{
+            position: absolute;
+            top:2%;
+            left: 2%;
+        }
+        @media (max-width: 768px){
+            .nav-item{
+
+                display: block;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -57,36 +94,46 @@ $settings = get_option('hookah_settings');
     </center>
 </div>
 <!-- Start Banner Area -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><div class="logo">
+            <p class="logo-text">
+                Hookah-Originals</p>
+        </div></a>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav  ">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#feature">Полезно знать</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#application">Заказ кальяна</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a class="phone nav-link"
+                   href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
 <section class="banner-area relative" id="home">
+
     <div class="container">
         <!-- Start Header Area -->
-        <header class="default-header">
-            <div class="container">
-                <div class="header-wrap">
-                    <div class="header-top d-flex justify-content-between align-items-center">
-                        <div class="logo">
-                            <p class="logo-text">
-                                Hookah-Originals</p>
-                        </div>
-                        <div class="main-menubar d-flex align-items-center">
-                            <nav class="text-center">
-                                <a href="#home">Главная</a>
-                                <a href="#feature">Полезно знать</a>
-                                <a href="#application">Заказ кальяна</a>
-                                <a href="#about">Отзывы</a>
-                                <a class="phone "
-                                   href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
-                            </nav>
-                            <div class="menu-bar"><span class="lnr lnr-cross"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+
         <!-- End Header Area -->
         <div class="row fullscreen align-items-center justify-content-center" style="height: 735px;">
-            <div class="col-lg-12">
-                <div class="banner-content text-center">
+            <div class="col-lg-12 align-self-center">
+                <div class="banner-content text-center align-self-center">
                     <h1 class="center__text glitch is-glitching" data-text="Кальян на дом">Кальян на дом</h1>
                     <p class="text-uppercase mx-auto">
                         по дискому району
@@ -179,12 +226,12 @@ $settings = get_option('hookah_settings');
 <section class=" bg-secondary-1 relative" id="application">
     <div class="container">
         <div class="row row-md-right about-details">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i">Заказать
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
             <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
             <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
-            <form id="order-form" action="#" method="post" class="mt-50 mb-25">
+            <form id="order-form" action="#" method="post" >
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
                         <div class="form-group row">
@@ -283,17 +330,16 @@ $settings = get_option('hookah_settings');
     </div>
 </section>
 <!-- Start member Area -->
-<section class="member-area relative pt-100 pb-100 parallax-window " data-parallax=" scroll "
-         data-image-src="../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg" id="about">
+<section class="member-area relative pt-100 pb-100 parallax-window " data-parallax=" scroll " id="about">
     <div class="overlay overlay-bg"></div>
     <div class="container relative">
         <div class="row justify-content-center ">
             <div class="active-member-carousel">
                 <div class="single-member item">
                     <div class="member-info d-flex flex-row justify-content-center">
-                        <img class="" style="width:100px;height: 100%;border-radius: 50%;"
+                        <img class="reviews-avatar" style="width:100px;height: 100%;border-radius: 50%;"
                              src="<?php echo get_template_directory_uri(); ?>/img/m1.jpg" alt="">
-                        <div class="details">
+                        <div class="details reviews-about">
                             <h4 class="text-white text-uppercase">Саша Простакова</h4>
                             <p>Возрост: 26 лет
                                 ст. Старомышастовская</p>
@@ -305,9 +351,9 @@ $settings = get_option('hookah_settings');
                 </div>
                 <div class="single-member item">
                     <div class="member-info d-flex flex-row justify-content-center">
-                        <img class="" style="width:100px;height: 100%; border-radius: 50%;"
+                        <img class="reviews-avatar" style="width:100px;height: 100%; border-radius: 50%;"
                              src="<?php echo get_template_directory_uri(); ?>/img/e1.jpg" alt="">
-                        <div class="details">
+                        <div class="details reviews-about">
                             <h4 class="text-white text-uppercase">Лиза</h4>
                             <p>Возрост: 22 лет
                                 ст. Старомышастовская</p>
@@ -354,16 +400,15 @@ $settings = get_option('hookah_settings');
 </footer>
 
 <!-- End Footer Area -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel-min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup-min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/FAER.sass">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar-min.css">
 <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -373,7 +418,8 @@ $settings = get_option('hookah_settings');
       rel="stylesheet">
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
 <style>
     @font-face {
         font-family: 'DynarShadow Bold';
@@ -391,13 +437,14 @@ $settings = get_option('hookah_settings');
         font-style: normal;
     }
 </style>
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         crossorigin="anonymous"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-min.sticky.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/calc-form-min.js"></script>
@@ -408,6 +455,35 @@ $settings = get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main-min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-min.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter48031541 = new Ya.Metrika({
+                    id:48031541,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48031541" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
 
