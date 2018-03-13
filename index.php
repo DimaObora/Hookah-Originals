@@ -403,12 +403,12 @@ $settings = get_option('hookah_settings');
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/linearicons.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel-min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup-min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar-min.css">
 <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -453,7 +453,7 @@ $settings = get_option('hookah_settings');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker-min.js" charset="utf-8"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main-min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-min.js"></script>
 
 </body>
