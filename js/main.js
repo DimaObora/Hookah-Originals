@@ -116,7 +116,7 @@ $(document).ready(function () {
         $("#tobacco").select2({
             placeholder: "Выберите табак:"
         });
-        $ ( ' .parallax-window ' ). parallax ();
+        $ ( ' .parallax-window ' ). parallax ({imageSrc :  '../img/ca07be5c2c7ab8e82d895fa81a6384c9.jpg' });
 
     });
 
