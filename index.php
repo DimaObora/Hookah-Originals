@@ -11,46 +11,28 @@ $settings = get_option('hookah_settings');
     <!-- Author Meta -->
     <meta name="author" content="">
     <!-- Meta Description -->
-    <meta name="description" content="">
+    <meta name="description" content="кальян на дом, заказать кальян">
     <!-- Meta Keyword -->
     <meta name="keywords" content="">
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Hookah Originals</title>
+    <title>Заказать кальян на дом</title>
     <style>
 
         .nav-item{
             padding: 0 12px;
             text-align: center;
         }
-        /*.navbar-nav{*/
-        /*flex-direction: row;*/
-        /*}*/
-        .navbar-toggleable-md{
-            position: relative;
-        }
-        .line-item{
-            text-align: center;
-        }
         .nav-item{
-
             display: inline-block;
         }
         .navbar-nav .nav-item{
             float: none!important;
         }
-        .button-menu-right{
-            float: right;
-        }
-        .logo-absol{
-            position: absolute;
-            top:2%;
-            left: 2%;
-        }
+
         @media (max-width: 768px){
             .nav-item{
-
                 display: block;
             }
         }
@@ -131,7 +113,7 @@ $settings = get_option('hookah_settings');
         <!-- Start Header Area -->
 
         <!-- End Header Area -->
-        <div class="row fullscreen align-items-center justify-content-center" style="height: 735px;">
+        <div class="row fullscreen align-items-center justify-content-center" style="height: 974px;">
             <div class="col-lg-12 align-self-center">
                 <div class="banner-content text-center align-self-center">
                     <h1 class="center__text glitch is-glitching" data-text="Кальян на дом">Кальян на дом</h1>
@@ -453,7 +435,7 @@ $settings = get_option('hookah_settings');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker-min.js" charset="utf-8"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-min.js"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
