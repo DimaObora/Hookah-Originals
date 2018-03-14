@@ -205,11 +205,11 @@ $settings = get_option('hookah_settings');
 <!-- End feature Area -->
 
 <!-- End service Area -->
-<section class=" bg-secondary-1 relative mt-350" id="application">
+<section class=" bg-secondary-1 relative mt-350 pb-100" id="application">
     <div class="container">
         <div class="row row-md-right about-details">
             <img src="<?php echo get_template_directory_uri(); ?>/img/form-2.png" class="form-img" alt="">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25 mt-40 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25 mt-100 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
             <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
