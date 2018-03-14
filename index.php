@@ -115,9 +115,9 @@ $settings = get_option('hookah_settings');
         <!-- End Header Area -->
         <div class="row fullscreen align-items-center justify-content-center" style="height: 974px;">
             <div class="col-lg-12 align-self-center">
-                <div class="banner-content text-center align-self-center">
-                    <h1 class="center__text glitch is-glitching" data-text="Кальян на дом">Кальян на дом</h1>
-                    <p class="text-uppercase mx-auto">
+                <div class="banner-content text-center align-self-center " >
+                    <h1 class="center__text glitch is-glitching wow bounceInUp" data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
+                    <p class="text-uppercase mx-auto wow bounceInUp" data-wow-delay="1.5s">
                         по дискому району
                     </p>
                     <!--<h1 class="text-uppercase text-white">Кальян на дом</h1>-->
@@ -156,13 +156,13 @@ $settings = get_option('hookah_settings');
 <section class="feature-area pb-100">
     <div class="container">
         <div class="row ">
-            <div class="col-lg-4 col-md-4 no-padding single-img">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f11.jpg" class="image img-fluid">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Большое разнообразие приятных вкусов и миксов</h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f22.jpg" class="image img-fluid">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Не знаешь что заказать?</h2>
@@ -171,13 +171,13 @@ $settings = get_option('hookah_settings');
                                 24-75-139</i></a></h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="3s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f33.jpg" class="image img-fluid">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Бесплатная доставка готового кальяна</h2>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 no-padding single-img">
+            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="4s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f44.jpg" class="image img-fluid">
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=oBzsStUX1Fk" class="play-btn">
@@ -188,7 +188,7 @@ $settings = get_option('hookah_settings');
                     <p>3 рецепта</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 no-padding single-img">
+            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="5s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f55.jpg" class="image img-fluid">
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=_0SniMwH6xI" class="play-btn">
@@ -208,14 +208,14 @@ $settings = get_option('hookah_settings');
 <section class=" bg-secondary-1 relative" id="application">
     <div class="container">
         <div class="row row-md-right about-details">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25">Заказать
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
             <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
             <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
             <form id="order-form" action="#" method="post" >
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInLeft" data-wow-delay="1s">
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <input required class="input-kalk-1cal" name="name" type="text" size="20"
@@ -248,7 +248,7 @@ $settings = get_option('hookah_settings');
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInRight" data-wow-delay="1s">
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
@@ -301,8 +301,8 @@ $settings = get_option('hookah_settings');
                         <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0">
                         <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                         <button id="sends"
-                                class="pull-left primary-btn  align-items-center mt-30"
-                                style="color: white">
+                                class="pull-left primary-btn  align-items-center mt-30 wow bounce" data-wow-delay="15s"
+                                style="color: white" onsubmit="yaCounter48031541.reachGoal('bay-hookah'); return true;">
                             Заказать
                         </button>
                     </div>
@@ -402,6 +402,7 @@ $settings = get_option('hookah_settings');
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
 <style>
     @font-face {
         font-family: 'DynarShadow Bold';
@@ -437,6 +438,10 @@ $settings = get_option('hookah_settings');
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function (d, w, c) {
