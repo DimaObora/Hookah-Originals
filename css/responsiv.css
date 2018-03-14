@@ -151,6 +151,10 @@
         padding-bottom: 25px;
         text-align: center !important;
     }
+    .mt-80-device{
+        margin-top: 80px;
+    }
+
 
 }
 
@@ -216,6 +220,9 @@
 
     .select{
         margin-bottom: 0;
+    }
+    .select {
+        margin-top: 0px;
     }
 }
 @media (max-width: 414px) {

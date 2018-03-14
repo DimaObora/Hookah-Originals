@@ -116,7 +116,7 @@ $settings = get_option('hookah_settings');
         <div class="row fullscreen align-items-center justify-content-center" style="height: 974px;">
             <div class="col-lg-12 align-self-center">
                 <div class="banner-content text-center align-self-center " >
-                    <h1 class="center__text glitch is-glitching wow bounceInUp" data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
+                    <h1 class="center__text glitch is-glitching wow bounceInUp " data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
                     <p class="text-uppercase mx-auto wow bounceInUp" data-wow-delay="1.5s">
                         по дискому району
                     </p>
@@ -209,7 +209,7 @@ $settings = get_option('hookah_settings');
     <div class="container">
         <div class="row row-md-right about-details">
             <img src="<?php echo get_template_directory_uri(); ?>/img/form-2.png" class="form-img" alt="">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25 mt-100 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center mt-80-device"><h2 class="f700i mb-25 mt-100 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
             <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
