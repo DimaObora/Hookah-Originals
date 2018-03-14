@@ -1957,12 +1957,9 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'olietta script lyrica bolditalic', serif;
     display: inline-block;;
 }
-.form-img{
+.form-img {
     position: absolute;
-    /*width: 43%;*/
-    /*left: 28%;*/
-    /*top: -59%;*/
-    width: 26%;
-    left: 23%;
-    top: -63.8%;
+    left: 50%;
+    transform: translate(-50%,-60.8%) scale(0.45, 0.45);
+    margin-right: -50%;
 }
