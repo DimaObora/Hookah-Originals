@@ -258,6 +258,9 @@ td,th {
 .mt-150 {
     margin-top: 150px
 }
+.mt-350 {
+    margin-top: 350px
+}
 
 .ml-0 {
     margin-left: 0!important
@@ -1953,4 +1956,13 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
     font-family: 'olietta script lyrica bolditalic', serif;
     display: inline-block;;
+}
+.form-img{
+    position: absolute;
+    /*width: 43%;*/
+    /*left: 28%;*/
+    /*top: -59%;*/
+    width: 26%;
+    left: 25%;
+    top: -67.5%;
 }
