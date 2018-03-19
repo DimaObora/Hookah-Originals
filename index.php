@@ -11,46 +11,28 @@ $settings = get_option('hookah_settings');
     <!-- Author Meta -->
     <meta name="author" content="">
     <!-- Meta Description -->
-    <meta name="description" content="">
+    <meta name="description" content="кальян на дом, заказать кальян">
     <!-- Meta Keyword -->
     <meta name="keywords" content="">
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Hookah Originals</title>
+    <title>Заказать кальян на дом</title>
     <style>
 
         .nav-item{
             padding: 0 12px;
             text-align: center;
         }
-        /*.navbar-nav{*/
-        /*flex-direction: row;*/
-        /*}*/
-        .navbar-toggleable-md{
-            position: relative;
-        }
-        .line-item{
-            text-align: center;
-        }
         .nav-item{
-
             display: inline-block;
         }
         .navbar-nav .nav-item{
             float: none!important;
         }
-        .button-menu-right{
-            float: right;
-        }
-        .logo-absol{
-            position: absolute;
-            top:2%;
-            left: 2%;
-        }
+
         @media (max-width: 768px){
             .nav-item{
-
                 display: block;
             }
         }
@@ -119,7 +101,7 @@ $settings = get_option('hookah_settings');
             </li>
             <li class="nav-item">
                 <a class="phone nav-link"
-                   href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
+                   href="tel:<?php echo preg_replace('/[ a-zA-Z,.\-\(\)]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
             </li>
         </ul>
 
@@ -131,11 +113,11 @@ $settings = get_option('hookah_settings');
         <!-- Start Header Area -->
 
         <!-- End Header Area -->
-        <div class="row fullscreen align-items-center justify-content-center" style="height: 735px;">
+        <div class="row fullscreen align-items-center justify-content-center" style="height: 974px;">
             <div class="col-lg-12 align-self-center">
-                <div class="banner-content text-center align-self-center">
-                    <h1 class="center__text glitch is-glitching" data-text="Кальян на дом">Кальян на дом</h1>
-                    <p class="text-uppercase mx-auto">
+                <div class="banner-content text-center align-self-center " >
+                    <h1 class="center__text glitch is-glitching wow bounceInUp " data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
+                    <p class="text-uppercase mx-auto wow bounceInUp" data-wow-delay="1.5s">
                         по дискому району
                     </p>
                     <!--<h1 class="text-uppercase text-white">Кальян на дом</h1>-->
@@ -174,13 +156,13 @@ $settings = get_option('hookah_settings');
 <section class="feature-area pb-100">
     <div class="container">
         <div class="row ">
-            <div class="col-lg-4 col-md-4 no-padding single-img">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f11.jpg" class="image img-fluid">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Большое разнообразие приятных вкусов и миксов</h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f22.jpg" class="image img-fluid">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Не знаешь что заказать?</h2>
@@ -189,13 +171,13 @@ $settings = get_option('hookah_settings');
                                 24-75-139</i></a></h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="3s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f33.jpg" class="image img-fluid">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Бесплатная доставка готового кальяна</h2>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 no-padding single-img">
+            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="4s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f44.jpg" class="image img-fluid">
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=oBzsStUX1Fk" class="play-btn">
@@ -206,7 +188,7 @@ $settings = get_option('hookah_settings');
                     <p>3 рецепта</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 no-padding single-img">
+            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="5s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f55.jpg" class="image img-fluid">
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=_0SniMwH6xI" class="play-btn">
@@ -223,17 +205,18 @@ $settings = get_option('hookah_settings');
 <!-- End feature Area -->
 
 <!-- End service Area -->
-<section class=" bg-secondary-1 relative" id="application">
+<section class=" bg-secondary-1 relative mt-350 pb-100" id="application">
     <div class="container">
         <div class="row row-md-right about-details">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center "><h2 class="f700i mb-25">Заказать
+            <img src="<?php echo get_template_directory_uri(); ?>/img/form-2.png" class="form-img" alt="">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center mt-80-device"><h2 class="f700i mb-25 mt-100 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
             <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
             <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
             <form id="order-form" action="#" method="post" >
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInLeft" data-wow-delay="1s">
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <input required class="input-kalk-1cal" name="name" type="text" size="20"
@@ -266,7 +249,7 @@ $settings = get_option('hookah_settings');
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInRight" data-wow-delay="1s">
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
@@ -319,8 +302,8 @@ $settings = get_option('hookah_settings');
                         <input class="input-kalk-1cal" name="result" id="result-input" type="hidden" value="0">
                         <div class="navbar-left mb-1em"><h4>Итого: <span id="result">0</span> руб.</h4></div>
                         <button id="sends"
-                                class="pull-left primary-btn  align-items-center mt-30"
-                                style="color: white">
+                                class="pull-left primary-btn  align-items-center mt-30 wow bounce" data-wow-delay="15s"
+                                style="color: white" onsubmit="yaCounter48031541.reachGoal('bay-hookah'); return true;">
                             Заказать
                         </button>
                     </div>
@@ -381,7 +364,7 @@ $settings = get_option('hookah_settings');
                 <?php echo $settings['hookah_text_field_7']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone "
-                                                                       href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?>
+                                                                       href="tel:<?php echo preg_replace('/[ a-zA-Z,.\-\(\)]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?>
                     &nbsp;&nbsp;&nbsp;&nbsp;</a><?php echo $settings['hookah_text_field_1']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 footer-social">
@@ -420,6 +403,7 @@ $settings = get_option('hookah_settings');
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material-datetime-picker.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
 <style>
     @font-face {
         font-family: 'DynarShadow Bold';
@@ -453,8 +437,12 @@ $settings = get_option('hookah_settings');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/material-datetime-picker-min.js" charset="utf-8"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/parallax.min.js "></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function (d, w, c) {
