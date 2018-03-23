@@ -101,7 +101,7 @@ $settings = get_option('hookah_settings');
             </li>
             <li class="nav-item">
                 <a class="phone nav-link"
-                   href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
+                   href="tel:<?php echo preg_replace('/[ a-zA-Z,.\-\(\)]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?></a>
             </li>
         </ul>
 
@@ -117,9 +117,7 @@ $settings = get_option('hookah_settings');
             <div class="col-lg-12 align-self-center">
                 <div class="banner-content text-center align-self-center " >
                     <h1 class="center__text glitch is-glitching wow bounceInUp " data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
-                    <p class="text-uppercase mx-auto wow bounceInUp" data-wow-delay="1.5s">
-                        по дискому району
-                    </p>
+
                     <!--<h1 class="text-uppercase text-white">Кальян на дом</h1>-->
                 </div>
             </div>
@@ -364,7 +362,7 @@ $settings = get_option('hookah_settings');
                 <?php echo $settings['hookah_text_field_7']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 copy-right-text"><a class="phone "
-                                                                       href="tel:<?php echo preg_replace('/[ a-zA-Z,.-]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?>
+                                                                       href="tel:<?php echo preg_replace('/[ a-zA-Z,.\-\(\)]/', '', $settings['hookah_text_field_0']); ?>"><?php echo $settings['hookah_text_field_0']; ?>
                     &nbsp;&nbsp;&nbsp;&nbsp;</a><?php echo $settings['hookah_text_field_1']; ?>
             </div>
             <div class="col-lg-3 col-xs-6 col-sm-6 footer-social">
