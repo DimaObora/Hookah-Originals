@@ -117,9 +117,7 @@ $settings = get_option('hookah_settings');
             <div class="col-lg-12 align-self-center">
                 <div class="banner-content text-center align-self-center " >
                     <h1 class="center__text glitch is-glitching wow bounceInUp " data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
-                    <p class="text-uppercase mx-auto wow bounceInUp" data-wow-delay="1.5s">
-                        по дискому району
-                    </p>
+
                     <!--<h1 class="text-uppercase text-white">Кальян на дом</h1>-->
                 </div>
             </div>
