@@ -225,6 +225,11 @@
         margin-top: 0px;
     }
 }
+@media (max-width: 484px){
+.form-img{
+width: 200%;
+}
+}
 @media (max-width: 414px) {
     .quote-left h2 {
         font-size: 24px;
