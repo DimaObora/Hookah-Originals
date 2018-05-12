@@ -7,7 +7,7 @@ $settings = get_option('hookah_settings');
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-<!--    <link rel="shortcut icon" href="--><?php //echo get_template_directory_uri(); ?><!--/img/fav.png">-->
+    <!--    <link rel="shortcut icon" href="--><?php //echo get_template_directory_uri(); ?><!--/img/fav.png">-->
     <!-- Author Meta -->
     <meta name="author" content="">
     <!-- Meta Description -->
@@ -20,19 +20,21 @@ $settings = get_option('hookah_settings');
     <title>Заказать кальян на дом</title>
     <style>
 
-        .nav-item{
+        .nav-item {
             padding: 0 12px;
             text-align: center;
         }
-        .nav-item{
+
+        .nav-item {
             display: inline-block;
         }
-        .navbar-nav .nav-item{
-            float: none!important;
+
+        .navbar-nav .nav-item {
+            float: none !important;
         }
 
-        @media (max-width: 768px){
-            .nav-item{
+        @media (max-width: 768px) {
+            .nav-item {
                 display: block;
             }
         }
@@ -77,11 +79,14 @@ $settings = get_option('hookah_settings');
 </div>
 <!-- Start Banner Area -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><div class="logo">
+    <a class="navbar-brand" href="#">
+        <div class="logo">
             <p class="logo-text">
                 Hookah-Originals</p>
-        </div></a>
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+    </a>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -115,8 +120,9 @@ $settings = get_option('hookah_settings');
         <!-- End Header Area -->
         <div class="row fullscreen align-items-center justify-content-center" style="height: 974px;">
             <div class="col-lg-12 align-self-center">
-                <div class="banner-content text-center align-self-center " >
-                    <h1 class="center__text glitch is-glitching wow bounceInUp " data-wow-delay="0.5s" data-text="Кальян на дом">Кальян на дом</h1>
+                <div class="banner-content text-center align-self-center ">
+                    <h1 class="center__text glitch is-glitching wow bounceInUp " data-wow-delay="0.5s"
+                        data-text="Кальян на дом">Кальян на дом</h1>
 
                     <!--<h1 class="text-uppercase text-white">Кальян на дом</h1>-->
                 </div>
@@ -133,17 +139,27 @@ $settings = get_option('hookah_settings');
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-sm-12 quote-left">
-                <h2 class="text-right">
-                    <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br> тех,<span> кто</span> редко <br>
-                        <span>курит.</span></p>
+                <h2 class="text-right mt-30">
+                    <p style="color: #a0a0a0"><span>Самый</span> вкусный Кальян у Нас ! <br> <span> Аренда </span>Кальяна
+                        на <br>
+                        <span>Дом</span></p>
                 </h2>
             </div>
             <div class="col-lg-6 col-sm-12 quote-right">
-                <p class="text-left">
-                    Дымный, с насыщенным вкусом и легкий в приготовлении кальян — идеальный кальян для новичков или для
-                    тех, кто дымит редко. Чтобы он получился именно таким, следуйте четырем советам. Подбор чаши
-                    Идеальная чаша в данном случае — силиконовая чаша. С ней сложнее всего накосячить. Выбирайте и не
-                    ошибетесь. Подбор табака Оптимальный вариант табака — с низким содержанием никатина.</p>
+
+
+                <table border="1">
+                    <h5 class="text-center mb-15">В стоимость входит:</h5>
+
+                    <tr><td>Кальян</td><td>Табак (Вкус на выбор)</td></tr>
+                    <tr><td>Залог (2800р)</td><td>Также все это можно докупить.</td></tr>
+                    <tr><td>12 кубиков угля</td><td>Мундштуки даются на количество человек.</td></tr>
+
+                </table>
+
+
+                <h5 class="text-center l">Доставка БЕСПЛАТНАЯ!<br><br>
+                    <span class="telefon">+7(900)24-75-139</span> Дмитрий.</h5>
             </div>
         </div>
     </div>
@@ -154,14 +170,16 @@ $settings = get_option('hookah_settings');
 <section class="feature-area pb-100">
     <div class="container">
         <div class="row ">
-            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/f11.jpg" class="image img-fluid">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/f11.jpg" class="image img-fluid"
+                     alt="Доставка кальяна на дом">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Большое разнообразие приятных вкусов и миксов</h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="2s">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/f22.jpg" class="image img-fluid">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/f22.jpg" class="image img-fluid"
+                     alt="Аренда кальяна">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Не знаешь что заказать?</h2>
                     <p>Мы поможем! Позвони по номеру:</p>
@@ -169,14 +187,16 @@ $settings = get_option('hookah_settings');
                                 24-75-139</i></a></h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="3s">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/f33.jpg" class="image img-fluid">
+            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/f33.jpg" class="image img-fluid"
+                     alt="кальяна на дом">
                 <div class="middle">
                     <h2 class="text-uppercase text-white">Бесплатная доставка готового кальяна</h2>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="4s">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/f44.jpg" class="image img-fluid">
+            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="2s" data-wow-delay="4s">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/f44.jpg" class="image img-fluid"
+                     alt="Доставка кальяна на дом">
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=oBzsStUX1Fk" class="play-btn">
                         <img class="vdo-icon" src="<?php echo get_template_directory_uri(); ?>/img/video-btn.png"
@@ -186,8 +206,9 @@ $settings = get_option('hookah_settings');
                     <p>3 рецепта</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="3s" data-wow-delay="5s">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/f55.jpg" class="image img-fluid">
+            <div class="col-lg-6 col-sm-12 no-padding single-img wow fadeIn" data-wow-duration="2s" data-wow-delay="5s">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/f55.jpg" class="image img-fluid"
+                     alt="Доставка кальяна на дом">
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=_0SniMwH6xI" class="play-btn">
                         <img class="vdo-icon" src="<?php echo get_template_directory_uri(); ?>/img/video-btn.png"
@@ -201,20 +222,41 @@ $settings = get_option('hookah_settings');
     </div>
 </section>
 <!-- End feature Area -->
+<section class="quote-area pt-100 pb-100" id="feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 quote-right">
+                <p class="text-left">
+                    Дымный, с насыщенным вкусом и легкий в приготовлении кальян — идеальный кальян для новичков или для
+                    тех, кто дымит редко. Чтобы он получился именно таким, следуйте четырем советам. Подбор чаши
+                    Идеальная чаша в данном случае — силиконовая чаша. С ней сложнее всего накосячить. Выбирайте и не
+                    ошибетесь. Подбор табака Оптимальный вариант табака — с низким содержанием никатина.</p>
+            </div>
+            <div class="col-lg-6 col-sm-12 quote-left">
+                <h2 class="text-left">
+                    <p style="color: #a0a0a0">Кальян для <span>новичков и</span> <br> тех, кто <span>редко</span> <br>
+                        <span>курит.</span></p>
+                </h2>
+            </div>
 
+        </div>
+    </div>
+</section>
 <!-- End service Area -->
 <section class=" bg-secondary-1 relative mt-350 pb-100" id="application">
     <div class="container">
         <div class="row row-md-right about-details">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/form-2.png" class="form-img" alt="">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center mt-80-device"><h2 class="f700i mb-25 mt-100 wow pulse" data-wow-delay="2s"  data-wow-iteration="5">Заказать
+            <img src="<?php echo get_template_directory_uri(); ?>/img/form-2.png" class="form-img" alt="Закажите кальн">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title-hookah text-center mt-80-device"><h2
+                        class="f700i mb-25 mt-100 wow pulse" data-wow-delay="2s" data-wow-iteration="5">Заказать
                     кальян!</h2></div>
             <input type="hidden" id="order-send-url" value="<?php echo get_template_directory_uri(); ?>/mail.php">
             <input type="hidden" id="price-hookah-one" value="<?php echo $settings['hookah_text_field_2']; ?>">
             <input type="hidden" id="price-hookah-day" value="<?php echo $settings['hookah_text_field_3']; ?>">
-            <form id="order-form" action="#" method="post" >
+            <form id="order-form" action="#" method="post">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInLeft" data-wow-delay="1s">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInLeft"
+                         data-wow-delay="1s">
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <input required class="input-kalk-1cal" name="name" type="text" size="20"
@@ -247,7 +289,8 @@ $settings = get_option('hookah_settings');
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInRight" data-wow-delay="1s">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 select wow slideInRight"
+                         data-wow-delay="1s">
                         <div class="form-group row">
                             <div class="col-sm-12">
                                 <select name="flask" class="formcolback-select " id="flask" onchange="calc()"
@@ -375,6 +418,9 @@ $settings = get_option('hookah_settings');
                 <?php if (!empty($settings['hookah_text_field_10'])) { ?><a
                     href="<?php echo $settings['hookah_text_field_10']; ?>" target="_blank">
                         <div class="circlefa"><i class="fa fa-vk"></i></div></a><?php } ?>
+                <?php if (!empty($settings['hookah_text_field_11'])) { ?><a
+                    href="<?php echo $settings['hookah_text_field_11']; ?>" target="_blank">
+                        <div class="circlefa"><i class="fa fa-instagram"></i></div></a><?php } ?>
             </div>
         </div>
     </div>
@@ -386,7 +432,8 @@ $settings = get_option('hookah_settings');
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/form.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel-min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup-min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiv.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/hedar-min.css">
@@ -421,8 +468,12 @@ $settings = get_option('hookah_settings');
 </style>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         crossorigin="anonymous"></script>
@@ -442,33 +493,40 @@ $settings = get_option('hookah_settings');
     new WOW().init();
 </script>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
     (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
+        (w[c] = w[c] || []).push(function () {
             try {
                 w.yaCounter48031541 = new Ya.Metrika({
-                    id:48031541,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
+                    id: 48031541,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
                 });
-            } catch(e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/48031541" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/48031541" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 </body>
 </html>

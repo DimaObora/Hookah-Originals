@@ -1963,3 +1963,17 @@ h1,h2,h3,h4,h5,h6 {
     transform: translate(-50%,-60.8%) scale(0.45, 0.45);
     margin-right: -50%;
 }
+table {
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+    margin:2% auto;
+}
+td, th {
+    border-radius: 0;
+    padding: 5px 15px;
+}
+.telefon{
+    font-size: 22px;
+    color: red;
+}
