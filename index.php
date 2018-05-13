@@ -9,11 +9,25 @@ $settings = get_option('hookah_settings');
     <!-- Favicon-->
     <!--    <link rel="shortcut icon" href="--><?php //echo get_template_directory_uri(); ?><!--/img/fav.png">-->
     <!-- Author Meta -->
+    <meta name="DC.Title" content="Доставка кальянов на дом">
+    <meta name="DC.Creator" content="Obora Dmitrii and Igor Sharangii">
+    <meta name="DC.Subject" content="Доставка дымныш кальянов на дом в течение часа">
+    <meta name="DC.Description" content="Доставка дымныш кальянов на дом в течение часа">
+    <meta name="DC.Publisher" content="https://web-originals.ru">
+    <meta name="DC.Contributor" content="Igor Sharangii">
+    <meta name="DC.Date" content="2018-03-01">
+    <meta name="DC.Type" content="text">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Identifier" content="http://hookah-originals.ru">
+    <meta name="DC.Source" content="Источник данных">
+    <meta name="DC.Language" content="ru-RU">
+    <meta name="DC.Coverage" content="World">
+    <meta name="DC.Rights" content="web-originals.ru">
     <meta name="author" content="">
     <!-- Meta Description -->
-    <meta name="description" content="кальян на дом, заказать кальян">
+    <meta name="description" content=" Доставка дымныш кальянов на дом в течение часа">
     <!-- Meta Keyword -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="заказать кальян, аренда кальяна , кальян на дом в краснодаре,кальян">
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
