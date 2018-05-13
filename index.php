@@ -139,23 +139,23 @@ $settings = get_option('hookah_settings');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-sm-12 quote-left">
-                <h2 class="text-right mt-30">
+                <h2 class="text-center mt-30">
                     <p style="color: #a0a0a0"><span>Самый</span> вкусный Кальян у Нас ! <br> <span> Аренда </span>Кальяна
                         на <br>
                         <span>Дом</span></p>
                 </h2>
             </div>
-            <div class="col-lg-12 col-sm-12 quote-right">
+            <div class="col-lg-12 col-lg-12 col-md-12 col-xs-12 quote-right">
 
-                <h2 class="text-center mb-15">В стоимость входит:</h2>
-                <div class="job_description col-xl-3">
+
+                <div class="job_description col-xl-3 col-lg-3 col-md-3 col-xs-12">
 
                     <img class="job_description_icon_min"
                          src="<?php echo get_template_directory_uri(); ?>/img/hookah-icon.png" alt="кальян">
 
                     <p class="job_description_title-block">Кальян</p>
                 </div>
-                <div class="job_description col-xl-8">
+                <div class="job_description col-xl-8 col-lg-8 col-md-8 col-xs-12">
                     <div class="box justify-content-center">
                         <img class="job_description_icon_maxi "
                              src="<?php echo get_template_directory_uri(); ?>/img/463044000156872-00-750x750.png"
@@ -166,27 +166,27 @@ $settings = get_option('hookah_settings');
                     <p class="job_description_title-block">Мундштуки даются на количество человек.</p>
                 </div>
 
-                <div class="job_description col-xl-4">
+                <div class="job_description col-xl-4 col-lg-4 col-md-4 col-xs-12">
 
                     <img class="job_description_icon_min"
                          src="<?php echo get_template_directory_uri(); ?>/img/coins.png" alt="кальян">
 
                     <p class="job_description_title-block">Залог (2800р)</p>
                 </div>
-                <div class="job_description col-xl-7">
+                <div class="job_description col-xl-7 col-lg-74 col-md-7 col-xs-12">
 
                     <img class="job_description_icon_max align-middle"
                          src="<?php echo get_template_directory_uri(); ?>/img/bank.png" alt="кальян">
                     <p class="job_description_title-block">Также все это можно докупить.</p>
                 </div>
-                <div class="job_description col-xl-4">
+                <div class="job_description col-xl-4 col-lg-4 col-md-4 col-xs-12">
 
                     <img class="job_description_icon_min" src="<?php echo get_template_directory_uri(); ?>/img/coal.png"
                          alt="кальян">
 
                     <p class="job_description_title-block">12 кубиков угля</p>
                 </div>
-                <div class="job_description col-xl-7">
+                <div class="job_description col-xl-7 col-lg-7 col-md-7 col-xs-12">
 
                     <img class="job_description_icon_max align-middle"
                          src="<?php echo get_template_directory_uri(); ?>/img/cigarettes.png" alt="кальян">
@@ -197,7 +197,7 @@ $settings = get_option('hookah_settings');
 
 
             </div>
-            <div class="col-xl-12"><h3 class="text-center l">Доставка БЕСПЛАТНАЯ!
+            <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 mt-20"><h3 class="text-center l">Доставка БЕСПЛАТНАЯ!
                     <span class="telefon">+7(900)24-75-139</span> Дмитрий.</h3></div>
 
         </div>
@@ -216,10 +216,10 @@ $settings = get_option('hookah_settings');
                     <h2 class="text-uppercase text-white">Большое разнообразие приятных вкусов и миксов</h2>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 no-padding single-img wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+            <div class="col-lg-4 col-md-4 no-padding single-img active wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/f22.jpg" class="image img-fluid"
                      alt="Аренда кальяна">
-                <div class="middle">
+                <div class="middle opacity">
                     <h2 class="text-uppercase text-white">Не знаешь что заказать?</h2>
                     <p>Мы поможем! Позвони по номеру:</p>
                     <h2 class="text-uppercase text-white"><a class="phone " href="tel:+79002475139"> <i>+7 900

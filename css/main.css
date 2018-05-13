@@ -1606,6 +1606,9 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
 }
+.opacity{
+    opacity: 1;
+}
 
 .middle {
     top: 80%;
@@ -1630,10 +1633,15 @@ h1, h2, h3, h4, h5, h6 {
 .single-img:hover {
     cursor: pointer
 }
+.active{
+
+    opacity: 1;
+}
 
 .single-img:hover .image {
     opacity: .5
 }
+
 
 .single-img:hover .middle, .single-img:hover .middle2 {
     opacity: 1
