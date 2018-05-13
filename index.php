@@ -138,29 +138,68 @@ $settings = get_option('hookah_settings');
 <section class="quote-area pt-100 pb-100" id="feature">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 quote-left">
+            <div class="col-lg-12 col-sm-12 quote-left">
                 <h2 class="text-right mt-30">
                     <p style="color: #a0a0a0"><span>Самый</span> вкусный Кальян у Нас ! <br> <span> Аренда </span>Кальяна
                         на <br>
                         <span>Дом</span></p>
                 </h2>
             </div>
-            <div class="col-lg-6 col-sm-12 quote-right">
+            <div class="col-lg-12 col-sm-12 quote-right">
+
+                <h2 class="text-center mb-15">В стоимость входит:</h2>
+                <div class="job_description col-xl-3">
+
+                    <img class="job_description_icon_min"
+                         src="<?php echo get_template_directory_uri(); ?>/img/hookah-icon.png" alt="кальян">
+
+                    <p class="job_description_title-block">Кальян</p>
+                </div>
+                <div class="job_description col-xl-8">
+                    <div class="box justify-content-center">
+                        <img class="job_description_icon_maxi "
+                             src="<?php echo get_template_directory_uri(); ?>/img/463044000156872-00-750x750.png"
+                             alt="кальян">
+
+                    </div>
+
+                    <p class="job_description_title-block">Мундштуки даются на количество человек.</p>
+                </div>
+
+                <div class="job_description col-xl-4">
+
+                    <img class="job_description_icon_min"
+                         src="<?php echo get_template_directory_uri(); ?>/img/coins.png" alt="кальян">
+
+                    <p class="job_description_title-block">Залог (2800р)</p>
+                </div>
+                <div class="job_description col-xl-7">
+
+                    <img class="job_description_icon_max align-middle"
+                         src="<?php echo get_template_directory_uri(); ?>/img/bank.png" alt="кальян">
+                    <p class="job_description_title-block">Также все это можно докупить.</p>
+                </div>
+                <div class="job_description col-xl-4">
+
+                    <img class="job_description_icon_min" src="<?php echo get_template_directory_uri(); ?>/img/coal.png"
+                         alt="кальян">
+
+                    <p class="job_description_title-block">12 кубиков угля</p>
+                </div>
+                <div class="job_description col-xl-7">
+
+                    <img class="job_description_icon_max align-middle"
+                         src="<?php echo get_template_directory_uri(); ?>/img/cigarettes.png" alt="кальян">
+
+                    <p class="job_description_title-block">Табак (Вкус на выбор)</p>
+                </div>
+                <div class="both"></div>
 
 
-                <table border="1">
-                    <h5 class="text-center mb-15">В стоимость входит:</h5>
-
-                    <tr><td>Кальян</td><td>Табак (Вкус на выбор)</td></tr>
-                    <tr><td>Залог (2800р)</td><td>Также все это можно докупить.</td></tr>
-                    <tr><td>12 кубиков угля</td><td>Мундштуки даются на количество человек.</td></tr>
-
-                </table>
-
-
-                <h5 class="text-center l">Доставка БЕСПЛАТНАЯ!<br><br>
-                    <span class="telefon">+7(900)24-75-139</span> Дмитрий.</h5>
             </div>
+            <div class="col-xl-12"><h3 class="text-center l">Доставка БЕСПЛАТНАЯ!
+                    <span class="telefon">+7(900)24-75-139</span> Дмитрий.</h3></div>
+
         </div>
     </div>
 </section>
@@ -225,6 +264,13 @@ $settings = get_option('hookah_settings');
 <section class="quote-area pt-100 pb-100" id="feature">
     <div class="container">
         <div class="row">
+
+            <div class="col-lg-6 col-sm-12 quote-left">
+                <h2 class="text-right">
+                    <p style="color: #a0a0a0"><span>Кальян</span> для новичков и <br> тех, <span>кто</span> редко <br>
+                        <span>курит.</span></p>
+                </h2>
+            </div>
             <div class="col-lg-6 col-sm-12 quote-right">
                 <p class="text-left">
                     Дымный, с насыщенным вкусом и легкий в приготовлении кальян — идеальный кальян для новичков или для
@@ -232,13 +278,6 @@ $settings = get_option('hookah_settings');
                     Идеальная чаша в данном случае — силиконовая чаша. С ней сложнее всего накосячить. Выбирайте и не
                     ошибетесь. Подбор табака Оптимальный вариант табака — с низким содержанием никатина.</p>
             </div>
-            <div class="col-lg-6 col-sm-12 quote-left">
-                <h2 class="text-left">
-                    <p style="color: #a0a0a0">Кальян для <span>новичков и</span> <br> тех, кто <span>редко</span> <br>
-                        <span>курит.</span></p>
-                </h2>
-            </div>
-
         </div>
     </div>
 </section>
