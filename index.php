@@ -253,7 +253,7 @@ $settings = get_option('hookah_settings');
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=oBzsStUX1Fk" class="play-btn">
                         <img class="vdo-icon" src="<?php echo get_template_directory_uri(); ?>/img/video-btn.png"
-                             alt="">
+                             alt="заказать кальян на дом">
                     </a>
                     <h2 class="text-uppercase text-white">КАК ЗАБИТЬ КАЛЬЯН ВКУСНО</h2>
                     <p>3 рецепта</p>
@@ -265,7 +265,7 @@ $settings = get_option('hookah_settings');
                 <div class="middle2">
                     <a href="https://www.youtube.com/watch?v=_0SniMwH6xI" class="play-btn">
                         <img class="vdo-icon" src="<?php echo get_template_directory_uri(); ?>/img/video-btn.png"
-                             alt="">
+                             alt="Доставка кальяна на дом">
                     </a>
                     <h2 class="text-uppercase text-white">Как сделать реально ВКУСНЫЙ кальян!</h2>
                     <p>за 15 мин</p>
@@ -415,7 +415,7 @@ $settings = get_option('hookah_settings');
                 <div class="single-member item">
                     <div class="member-info d-flex flex-row justify-content-center">
                         <img class="reviews-avatar" style="width:100px;height: 100%;border-radius: 50%;"
-                             src="<?php echo get_template_directory_uri(); ?>/img/m1.jpg" alt="">
+                             src="<?php echo get_template_directory_uri(); ?>/img/m1.jpg" alt="отзывы">
                         <div class="details reviews-about">
                             <h4 class="text-white text-uppercase">Саша Простакова</h4>
                             <p>Возрост: 26 лет
@@ -429,7 +429,7 @@ $settings = get_option('hookah_settings');
                 <div class="single-member item">
                     <div class="member-info d-flex flex-row justify-content-center">
                         <img class="reviews-avatar" style="width:100px;height: 100%; border-radius: 50%;"
-                             src="<?php echo get_template_directory_uri(); ?>/img/e1.jpg" alt="">
+                             src="<?php echo get_template_directory_uri(); ?>/img/e1.jpg" alt="отзывы">
                         <div class="details reviews-about">
                             <h4 class="text-white text-uppercase">Лиза</h4>
                             <p>Возрост: 22 лет
@@ -578,7 +578,7 @@ $settings = get_option('hookah_settings');
     })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript>
-    <div><img src="https://mc.yandex.ru/watch/48031541" style="position:absolute; left:-9999px;" alt=""/></div>
+    <div><img src="https://mc.yandex.ru/watch/48031541" style="position:absolute; left:-9999px;" alt="заказ кальяна"/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
 </body>
